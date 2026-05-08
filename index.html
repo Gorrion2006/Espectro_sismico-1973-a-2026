@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Espectro Sísmico — Norma E.030</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="logo-box">E-030</div>
+  <h1>Espectro Sísmico</h1>
+  <span>Norma Técnica E.030 — RNE Perú · Todas las versiones</span>
+</header>
+
+<div class="container">
+
+  <!-- ══════════════ PANEL INPUTS ══════════════ -->
+  <div class="panel">
+
+    <div class="section-title">Versión de la Norma</div>
+    <div class="version-selector">
+      <button class="ver-btn" data-v="1977" id="btn1977" onclick="setVersion('1977')">RNC<br>1977</button>
+      <button class="ver-btn" data-v="1997" id="btn1997" onclick="setVersion('1997')">E.030<br>1997</button>
+      <button class="ver-btn" data-v="2003" id="btn2003" onclick="setVersion('2003')">E.030<br>2003</button>
+      <button class="ver-btn" data-v="2016" id="btn2016" onclick="setVersion('2016')">E.030<br>2016</button>
+      <button class="ver-btn" data-v="2018" id="btn2018" onclick="setVersion('2018')">E.030<br>2018</button>
+      <button class="ver-btn" data-v="2026" id="btn2026" onclick="setVersion('2026')">E.030<br>2026★</button>
+    </div>
+    <div class="version-note v2018" id="version-note"></div>
+
+    <div class="section-title">Parámetros de sitio</div>
+
+    <div class="field-group">
+      <label>Zona Sísmica <span class="badge">Z</span></label>
+      <select id="zona"></select>
+    </div>
+
+    <div class="field-group">
+      <label>Perfil de Suelo <span class="badge">S</span></label>
+      <select id="suelo"></select>
+    </div>
+
+    <!-- CRITERIOS E.030-2026 (Tabla N°2) -->
+    <div class="field-group" id="criteria-group" style="display:none;background:rgba(0,255,136,0.08);padding:0.7rem;border-left:2px solid var(--accent2);margin-bottom:1.2rem;">
+      <div style="font-size:0.7rem;color:var(--accent2);margin-bottom:0.5rem;letter-spacing:1px;text-transform:uppercase;font-weight:600;">📋 Tabla Nº 2 — Clasificación de Suelos (E.030-2026)</div>
+      <div style="font-size:0.72rem;color:var(--muted);line-height:1.65;font-family:'Share Tech Mono',monospace;">
+        <strong>S0 — Roca dura:</strong> Vs30 ≥ 800 m/s<br>
+        <strong>S1 — Suelo muy rígido:</strong> Vs30 550–800 m/s  o  N60 > 50  o  Su > 100 kPa<br>
+        <strong>S2 — Suelo rígido:</strong> Vs30 350–550 m/s  o  N60 30–50  o  Su 80–100 kPa<br>
+        <strong>S3 — Suelo intermedio:</strong> Vs30 200–350 m/s  o  N60 15–30  o  Su 50–80 kPa<br>
+        <strong>S4 — Suelo blando:</strong> Vs30 < 200 m/s  o  N60 < 15  o  Su < 50 kPa<br>
+        <strong>S5 — Excepcional:</strong> Requiere estudio geotécnico especializado.<br>
+        <span style="color:var(--accent3);font-weight:600;margin-top:0.3rem;display:block;">⚠ NOTA: Usar el suelo más desfavorable según cualquiera de los criterios.</span>
+      </div>
+    </div>
+
+    <div class="field-group">
+      <label>Categoría de la Edificación <span class="badge">U</span></label>
+      <select id="uso">
+        <option value="1.5">A1 — Hospitales esenciales (U=1.5)</option>
+        <option value="1.5">A2 — Hospitales, cuarteles (U=1.5)</option>
+        <option value="1.3">B — Importantes (U=1.3)</option>
+        <option value="1.0" selected>C — Comunes (U=1.0)</option>
+        <option value="0.8">D — Temporales (U=0.8)</option>
+      </select>
+    </div>
+
+    <div class="field-group">
+      <label>Sistema Estructural <span class="badge">R</span></label>
+      <select id="sistema">
+        <optgroup label="Concreto Armado">
+          <option value="8">Pórticos (R=8)</option>
+          <option value="7">Dual (R=7)</option>
+          <option value="6">Muros estructurales (R=6)</option>
+          <option value="3.5">Muros de ductilidad limitada (R=3.5)</option>
+        </optgroup>
+        <optgroup label="Estructuras de Acero">
+          <option value="8">Pórticos especiales SMF (R=8)</option>
+          <option value="7">Pórticos ordinarios OMF (R=7)</option>
+          <option value="6">Arriostradas excéntricamente (R=6)</option>
+          <option value="6">Arriostradas concentricamente (R=6)</option>
+        </optgroup>
+        <optgroup label="Albañilería">
+          <option value="3">Confinada o armada (R=3)</option>
+        </optgroup>
+        <optgroup label="Madera">
+          <option value="7">Madera (R=7)</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <!-- PERÍODO Ts (solo E.030-2026) -->
+    <div class="field-group" id="ts-group" style="display:none;">
+      <label>Ts — Período Predominante del Terreno <span class="badge">NUEVO 2026</span></label>
+      <input type="number" id="ts_value" value="0.0" step="0.1" min="0" max="5.0">
+      <div class="hint">— Obligatorio para Cat. A y B en Zona 4.</div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-title">Irregularidades</div>
+
+    <div class="field-group">
+      <label>Irreg. en Planta <span class="badge">Ip</span></label>
+      <select id="irreg_planta">
+        <option value="1.0" selected>Sin irregularidad (Ip=1.0)</option>
+        <option value="0.9">Torsional (Ip=0.9)</option>
+        <option value="0.7">Esquinas entrantes (Ip≈0.81)</option>
+        <option value="0.9">Discontinuidad del diafragma (Ip=0.9)</option>
+        <option value="0.9">Sistemas no paralelos (Ip=0.9)</option>
+      </select>
+      <div class="hint">— Aplica desde E.030-2016</div>
+    </div>
+
+    <div class="field-group">
+      <label>Irreg. en Altura <span class="badge">Ia</span></label>
+      <select id="irreg_altura">
+        <option value="1.0" selected>Sin irregularidad (Ia=1.0)</option>
+        <option value="0.9">Irregularidad de rigidez (Ia=0.9)</option>
+        <option value="0.9">Irregularidad de masa (Ia=0.9)</option>
+        <option value="0.8">Discontinuidad del sistema resist. (Ia=0.8)</option>
+        <option value="0.75">Extrema rigidez (Ia=0.75)</option>
+        <option value="0.6">Extrema discontinuidad (Ia=0.6)</option>
+      </select>
+      <div class="hint">— Según Art. 23-24 de E.030</div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-title">Configuración del espectro</div>
+
+    <div class="field-group">
+      <label>T máximo <span class="badge">s</span></label>
+      <input type="number" id="tmax" value="4.0" step="0.5" min="1" max="10">
+      <div class="hint">— Periodo máximo a calcular (seg)</div>
+    </div>
+
+    <div class="field-group">
+      <label>Paso ΔT <span class="badge">s</span></label>
+      <input type="number" id="paso" value="0.05" step="0.01" min="0.01" max="0.5">
+      <div class="hint">— Incremento de periodo (seg)</div>
+    </div>
+
+    <div id="error-msg" class="error-msg">⚠ Verifique los parámetros ingresados</div>
+
+    <!-- CHECKLIST E.030-2026 -->
+    <div id="recomendaciones-2026" style="display:none;background:rgba(0,255,136,0.06);border-left:3px solid var(--accent2);padding:0.8rem;margin:1rem 0;font-size:0.75rem;color:var(--muted);line-height:1.7;font-family:'Share Tech Mono',monospace;">
+      <div style="color:var(--accent2);font-weight:600;margin-bottom:0.5rem;">📋 CHECKLIST E.030-2026:</div>
+      <input type="checkbox" id="check_suelo"> <strong>Tabla Nº 2:</strong> Suelo clasificado por Vs30, N60, Su<br>
+      <input type="checkbox" id="check_ts"> <strong>Art. 15:</strong> Si Cat. A/B en Z4, Ts determinado<br>
+      <input type="checkbox" id="check_ts_condicion"> <strong>Condición Ts:</strong> Si Ts > 0.65×Tp, perfil degradado ✓<br>
+      <input type="checkbox" id="check_r"> <strong>Tabla Nº 10:</strong> Coeficientes R verificados<br>
+      <input type="checkbox" id="check_bidireccional"> <strong>Art. 28:</strong> 100% en 2 direcciones (Cat. A1/A2)<br>
+      <input type="checkbox" id="check_microzona"> <strong>Anexo III:</strong> Microzonificación para Z4 y suelos S3-S5<br>
+    </div>
+
+    <br>
+    <button class="btn-calc" onclick="calcular()">▶ GENERAR ESPECTRO</button>
+
+    <div id="params-out" class="params-grid" style="display:none"></div>
+  </div>
+
+  <!-- ══════════════ PANEL GRÁFICO ══════════════ -->
+  <div class="chart-panel">
+    <div class="chart-header">
+      <div>
+        <div class="chart-title">Espectro de Pseudo-aceleraciones</div>
+        <div class="chart-subtitle" id="formula-label">Sa = Z·U·C·S/R · g</div>
+      </div>
+      <div class="legend-dot">SISMO DE DISEÑO</div>
+    </div>
+    <div class="chart-wrapper">
+      <div class="empty-state" id="empty-state">
+        <div class="icon">📊</div>
+        <p>Configure los parámetros y genere el espectro</p>
+      </div>
+      <canvas id="myChart" style="display:none"></canvas>
+    </div>
+  </div>
+
+  <!-- ══════════════ TABLA ══════════════ -->
+  <div class="table-panel" id="tabla-panel" style="display:none">
+    <div class="chart-header">
+      <div class="section-title" style="margin:0">Tabla de valores</div>
+      <div style="display:flex;gap:0.5rem;">
+        <button class="btn-export" onclick="exportTXT()">↓ EXPORTAR TXT</button>
+      </div>
+    </div>
+    <br>
+    <div class="table-wrapper">
+      <table id="tabla-valores">
+        <thead>
+          <tr>
+            <th>T (s)</th>
+            <th>Sa (g)</th>
+            <th>C</th>
+            <th>Sa (m/s²)</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
