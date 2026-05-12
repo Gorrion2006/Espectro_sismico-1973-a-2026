@@ -176,9 +176,15 @@ function factorC(T, Tp, Tl, version) {
   if (version === '1997' || version === '2003') {
     return T < Tp ? 2.5 : 2.5 * (Tp / T);
   }
-  // 2016 / 2018 / 2026
-  if (T < Tp)  return 2.5;
-  if (T <= Tl) return 2.5 * (Tp / T);
+  if (version === '2016' || version === '2018') {
+    if (T <= Tp)  return 2.5;
+    if (T <= Tl)  return 2.5 * (Tp / T);
+    return 2.5 * (Tp * Tl) / (T * T);
+  }
+  // Solo 2026 tiene rampa inicial (Art. 18, pág. 13)
+  if (T < 0.2 * Tp) return 1 + 7.5 * (T / Tp);   // C=1 en T=0, sube a C=2.5 en T=0.2Tp
+  if (T <= Tp)      return 2.5;
+  if (T <= Tl)      return 2.5 * (Tp / T);
   return 2.5 * (Tp * Tl) / (T * T);
 }
 
@@ -276,7 +282,13 @@ function calcular() {
   // Construir array de periodos
   const puntos = new Set();
   for (let t = 0; t <= Tmax + 1e-9; t = Math.round((t + paso) * 1000) / 1000) puntos.add(t);
-  [0, Tp_eff, Tl_eff].forEach(t => { if (t !== null && t !== undefined && t <= Tmax) puntos.add(t); });
+  // [0, Tp_eff, Tl_eff].forEach(t => { if (t !== null && t !== undefined && t <= Tmax) puntos.add(t); });
+  const puntosExtra = normaVersion === '2026'
+    ? [0, 0.2 * Tp_eff, Tp_eff, Tl_eff]
+    : [0, Tp_eff, Tl_eff];
+  puntosExtra.forEach(t => {
+    if (t !== null && t !== undefined && t <= Tmax) puntos.add(t);
+  });
   const T_arr = Array.from(puntos).sort((a, b) => a - b);
 
   datosEspectro = T_arr.map(T => {
@@ -306,9 +318,10 @@ function renderChart(datos, Tp, Tl) {
   const canvas = document.getElementById('myChart');
   canvas.style.display = 'block';
 
-  const color  = VER_COLOR[normaVersion] || '#00ff88';
-  const labels = datos.map(d => d.T.toFixed(2));
-  const values = datos.map(d => d.Sa);
+  const color = VER_COLOR[normaVersion] || '#00ff88';
+
+  // ← CLAVE: datos como {x, y} para eje X numérico real
+  const points = datos.map(d => ({ x: d.T, y: d.Sa }));
 
   if (chartInstance) chartInstance.destroy();
   const ctx  = canvas.getContext('2d');
@@ -317,12 +330,12 @@ function renderChart(datos, Tp, Tl) {
   grad.addColorStop(1, hexRgba(color, 0.01));
 
   chartInstance = new Chart(ctx, {
-    type: 'line',
+    type: 'scatter',           // ← scatter con showLine para eje X numérico
     data: {
-      labels,
       datasets: [{
         label: 'Sa (g)',
-        data: values,
+        data: points,
+        showLine: true,        // ← dibuja línea entre puntos
         borderColor: color,
         backgroundColor: grad,
         borderWidth: 2.5,
@@ -330,7 +343,7 @@ function renderChart(datos, Tp, Tl) {
         pointHoverRadius: 5,
         pointHoverBackgroundColor: color,
         fill: true,
-        tension: 0.1,
+        tension: 0,
       }]
     },
     options: {
@@ -349,26 +362,23 @@ function renderChart(datos, Tp, Tl) {
           titleFont: { family: 'Share Tech Mono', size: 11 },
           bodyFont: { family: 'Share Tech Mono', size: 11 },
           callbacks: {
-            title: items => `T = ${items[0].label} s`,
-            label: item  => `Sa = ${item.raw.toFixed(4)} g`,
+            title: items => `T = ${items[0].parsed.x.toFixed(3)} s`,
+            label: item  => `Sa = ${item.parsed.y.toFixed(4)} g`,
           }
         },
       },
       scales: {
         x: {
+          type: 'linear',      // ← eje X numérico continuo
+          min: 0,              // ← fuerza inicio en 0
           title: { display: true, text: 'PERIODO T (s)', color: '#5a7090', font: { family: 'Share Tech Mono', size: 10 }, padding: { top: 8 } },
-          ticks: {
-            color: '#5a7090', font: { family: 'Share Tech Mono', size: 10 }, maxTicksLimit: 12,
-            callback: (val, i, ticks) => {
-              const step = Math.ceil(ticks.length / 10);
-              return i % step === 0 ? Number(labels[i]).toFixed(1) : '';
-            }
-          },
+          ticks: { color: '#5a7090', font: { family: 'Share Tech Mono', size: 10 }, callback: v => v.toFixed(1) },
           grid: { color: 'rgba(30,45,74,0.6)' },
           border: { color: '#1e2d4a' }
         },
         y: {
-          title: { display: true, text: 'PSEUDO-ACELERACIÓN Sa (g)', color: '#5a7090', font: { family: 'Share Tech Mono', size: 10 }, padding: { bottom: 8 } },
+          min: 0,              // ← fuerza inicio en 0
+          title: { display: true, text: 'Sa (g)', color: '#5a7090', font: { family: 'Share Tech Mono', size: 10 }, padding: { bottom: 8 } },
           ticks: { color: '#5a7090', font: { family: 'Share Tech Mono', size: 10 }, callback: v => v.toFixed(3) },
           grid: { color: 'rgba(30,45,74,0.6)' },
           border: { color: '#1e2d4a' },
@@ -463,10 +473,15 @@ function renderParams(Z, U, S, R, R0, Ia, Ip, Tp, Tl, zona, suelo, Ts, sueloModi
 
 function renderTable(datos) {
   document.getElementById('tabla-panel').style.display = 'block';
-  const tbody = document.getElementById('tabla-body');
-  const step  = Math.max(1, Math.floor(datos.length / 80));
-  tbody.innerHTML = datos
-    .filter((_, i) => i % step === 0 || i === datos.length - 1)
+  const tbody   = document.getElementById('tabla-body');
+  const pasoVal = parseFloat(document.getElementById('paso').value);
+
+  const filas = datos.filter(d => {
+    const multiple = Math.round(d.T / pasoVal);
+    return Math.abs(d.T - multiple * pasoVal) < 1e-9;
+  });
+
+  tbody.innerHTML = filas
     .map(d => `
       <tr>
         <td>${d.T.toFixed(3)}</td>
@@ -483,94 +498,29 @@ function renderTable(datos) {
 function exportTXT() {
   if (!datosEspectro.length) return;
 
-  const getSelText = id => document.getElementById(id).options[document.getElementById(id).selectedIndex].text;
-  const zona  = getSelText('zona');
-  const suelo = getSelText('suelo');
-  const uso   = getSelText('uso');
-  const sist  = getSelText('sistema');
-  const ip    = getSelText('irreg_planta');
-  const ia    = getSelText('irreg_altura');
+  const pasoVal = parseFloat(document.getElementById('paso').value);
 
-  const saVals = datosEspectro.map(d => d.Sa);
-  const tVals  = datosEspectro.map(d => d.T);
-  const saMax  = Math.max(...saVals);
-  const tMax   = Math.max(...tVals);
-  const W = 70, H = 24;
-
-  // Gráfico ASCII
-  const grid = Array.from({ length: H }, () => Array(W).fill(' '));
-  datosEspectro.forEach(d => {
-    const col = Math.round((d.T / tMax) * (W - 1));
-    const row = H - 1 - Math.round((d.Sa / saMax) * (H - 1));
-    grid[Math.max(0, Math.min(H-1, row))][Math.max(0, Math.min(W-1, col))] = '*';
+  const datosFiltrados = datosEspectro.filter(d => {
+    const multiple = Math.round(d.T / pasoVal);
+    return Math.abs(d.T - multiple * pasoVal) < 1e-9;
   });
-  for (let i = 1; i < datosEspectro.length; i++) {
-    const c0 = Math.round((datosEspectro[i-1].T / tMax) * (W-1));
-    const c1 = Math.round((datosEspectro[i].T   / tMax) * (W-1));
-    const r0 = H-1-Math.round((datosEspectro[i-1].Sa / saMax) * (H-1));
-    const r1 = H-1-Math.round((datosEspectro[i].Sa   / saMax) * (H-1));
-    if (c0 === c1) {
-      const lo = Math.min(r0, r1), hi = Math.max(r0, r1);
-      for (let r = lo; r <= hi; r++) grid[Math.max(0,Math.min(H-1,r))][Math.max(0,Math.min(W-1,c0))] = '*';
-    }
-  }
-  const yLabelW = 7;
-  const yLabels = Array.from({length: H}, (_, i) => (saMax - (saMax / (H-1)) * i).toFixed(3));
-  const chartLines = grid.map((row, i) => `${yLabels[i].padStart(yLabelW)} |${row.join('')}`);
-  const xAxis  = ' '.repeat(yLabelW) + ' +' + '-'.repeat(W);
-  const xTicks = (() => {
-    const n = 7;
-    let s = ' '.repeat(yLabelW + 2);
-    for (let i = 0; i < n; i++) {
-      const t   = (tMax / (n-1)) * i;
-      const lbl = t.toFixed(1);
-      const pos = Math.round((t / tMax) * (W-1));
-      while (s.length < yLabelW + 2 + pos) s += ' ';
-      s = s.substring(0, yLabelW+2+pos) + lbl + s.substring(yLabelW+2+pos+lbl.length);
-    }
-    return s;
-  })();
 
-  const step = Math.max(1, Math.floor(datosEspectro.length / 50));
-  const tableRows = datosEspectro
-    .filter((_, i) => i % step === 0 || i === datosEspectro.length - 1)
-    .map(d => `  ${d.T.toFixed(3).padEnd(10)} ${d.Sa.toFixed(5).padEnd(12)}`);
+  const tableRows = datosFiltrados.map(d => `${d.T.toFixed(3)} ${d.Sa.toFixed(4)}`);
 
-  const sep  = '='.repeat(72);
-  const sep2 = '-'.repeat(72);
+  // \r\n para saltos de línea Windows (compatible con NetCAD)
+  const txt = tableRows.join('\r\n');
 
-  const versNota = {
-    '1977': '  NOTA: RNC-1977 — 3 zonas; C=(Tp/T)^(2/3); sin TL.',
-    '1997': '  NOTA: E.030-1997 — 3 zonas; 2 tramos; sin TL.',
-    '2003': '  NOTA: E.030-2003 — 3 zonas; 2 tramos; sin TL.',
-    '2016': '  NOTA: E.030-2016 — 4 zonas; S = f(zona,suelo); 3 tramos con TL.',
-    '2018': '  NOTA: E.030-2018 — 4 zonas; S = f(zona,suelo); 3 tramos con TL.',
-    '2026': `  NOTA: E.030-2026 (RM 183-2026) — VIGENTE\n  • Suelos S0-S5 con nuevos umbrales\n  • Ts: si > 0.65×Tp, degradar perfil\n  • R = 3.5 para muros limitada (máx 5 pisos)`,
-  }[normaVersion];
+  // Convertir a ANSI (windows-1252) manualmente via Uint8Array
+  const encoder = new TextEncoder(); // UTF-8
+  const utf8 = encoder.encode(txt);
 
-  const txt = [
-    sep,
-    `  ESPECTRO DE RESPUESTA — NORMA E.030-${normaVersion} (RNE PERÚ)`,
-    sep,
-    sep2,
-    '',
-    '  TABLA DE VALORES',
-    sep2,
-    `  ${'T (s)'.padEnd(10)} ${'Sa (g)'.padEnd(12)}`,
-    sep2,
-    ...tableRows,
-    sep2,
-    '',
-    `  Generado: ${new Date().toLocaleString('es-PE')}`,
-    sep,
-  ].join('\n');
-
-  const blob = new Blob([txt], { type: 'text/plain;charset=utf-8' });
+  // Para texto puramente numérico (solo dígitos, punto, espacio, \r\n)
+  // UTF-8 y ANSI son idénticos — el Blob con charset correcto es suficiente
+  const blob = new Blob([utf8], { type: 'text/plain;charset=windows-1252' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = `espectro_E030_${normaVersion}.txt`;
+  a.download = 'Espectro 1.txt';
   a.click();
 }
-
 // ── INICIALIZAR ──
 setVersion('2026');
