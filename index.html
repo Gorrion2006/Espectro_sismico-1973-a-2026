@@ -32,8 +32,36 @@
     </div>
     <div class="version-note v2018" id="version-note"></div>
 
-    <div class="section-title">Parámetros de sitio</div>
+    <div class="section-title">Ubicación y Zona Sísmica</div>
 
+    <!-- ── BUSCADOR DE UBIGEO ── -->
+    <div class="field-group">
+      <label>Buscar Distrito <span class="badge">UBIGEO</span></label>
+      <div class="ubigeo-wrap">
+        <div class="ubigeo-input-row">
+          <input
+            type="text"
+            id="ubigeo-input"
+            placeholder="Escribe un distrito"
+            autocomplete="off"
+            spellcheck="false"
+            >
+          <button class="ubigeo-clear-btn" id="ubigeo-clear" title="Limpiar búsqueda" style="display:none">✕</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="field-group">
+      <label> <span class="badge">Departamento</span></label>
+      <select id="zonaDepartamento" placeholder="Selecciona departamento"></select>
+      <label> <span class="badge">Provincia</span></label>
+      <select id="zonaProvincia" placeholder="Selecciona provincia"></select>
+      <label> <span class="badge">Distrito</span></label>
+      <select id="zonaDistrito" placeholder="Selecciona distrito"></select>
+    <div class="ubigeo-tag" id="ubigeo-tag" style="display:none"></div>
+    <div class="hint">— Detecta automáticamente la Zona Sísmica (E.030 Anexo Nº 1)</div>
+
+    </div>
     <div class="field-group">
       <label>Zona Sísmica <span class="badge">Z</span></label>
       <select id="zona"></select>
@@ -206,7 +234,9 @@
 
 </div>
 
-<script src="ubigeo_data.js"></script>
-<script src="app.js"></script>
+<!-- Dropdown fuera del panel para escapar clip-path -->
+<div class="ubigeo-dropdown" id="ubigeo-dropdown" style="display:none"></div>
+
+<script type="module" src="app.js"></script>
 </body>
 </html>

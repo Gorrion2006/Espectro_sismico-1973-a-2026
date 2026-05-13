@@ -1,6 +1,8 @@
+import UBIGEO_DATA from "./ubigeo.js";
+
 // ════════════════════════════════════════════════════════
 //  DATOS POR VERSIÓN DE NORMA
-// ════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════
 
 let normaVersion = '2018';
 
@@ -70,23 +72,18 @@ const VERSION_NOTES = {
   '1977': `<strong style="color:var(--accent6)">RNC — 1977:</strong> Primera norma sísmica nacional.<br>
     3 zonas (Z=0.40/0.70/1.00), suelos S1–S3.<br>
     Espectro: C=(Tp/T)<sup>2/3</sup> ≤ 2.5 (2 tramos). Sin R explícito.`,
-
   '1997': `<strong style="color:var(--accent5)">E.030 — 1997:</strong> Segunda norma sismorresistente NTE.<br>
     3 zonas (Z=0.15/0.30/0.40), suelos S1–S4.<br>
     Espectro: 2 tramos sin TL. R elevados (÷1.25 en 2003).`,
-
   '2003': `<strong style="color:var(--accent3)">E.030 — 2003:</strong> Revisión post-sismo Atico 2001.<br>
     3 zonas (Z=0.15/0.30/0.40), suelos S1–S4.<br>
     Espectro: 2 tramos sin TL. R reducidos respecto a 1997.`,
-
   '2016': `<strong style="color:var(--accent4)">E.030 — 2016:</strong> Gran actualización post-sismo Pisco 2007.<br>
     4 zonas (Z=0.10/0.25/0.35/0.45), suelos S0–S3.<br>
     Factor S depende de zona×suelo. Espectro: 3 tramos con TL.`,
-
   '2018': `<strong style="color:var(--accent)">E.030 — 2018:</strong> Actualización vigente (hasta 2026).<br>
     Mismos parámetros espectrales que 2016. Mejoras en irregularidades.<br>
     4 zonas (Z=0.10/0.25/0.35/0.45), suelos S0–S3.`,
-
   '2026': `<strong style="color:var(--accent2)">E.030 — 2026 ★ VIGENTE (RM 183-2026 — 28 abr 2026):</strong><br>
     • Clasificación de suelos: Vs30, N60, Su con nuevos umbrales (S0-S5)<br>
     • Período Ts: obligatorio para Cat. A/B en Z4<br>
@@ -95,7 +92,6 @@ const VERSION_NOTES = {
     • Parámetros Z/S/Tp/TL: idénticos a 2018`,
 };
 
-// Color del espectro por versión
 const VER_COLOR = {
   '1977': '#f72585',
   '1997': '#ffd166',
@@ -105,6 +101,278 @@ const VER_COLOR = {
   '2026': '#00ff88',
 };
 
+// ════════════════════════════════════════════════════════
+//  UBIGEO — BUSCADOR
+// ════════════════════════════════════════════════════════
+
+let ubigeoSeleccionado = null;
+let ubigeoHighlight    = -1;
+let ubigeoResultados   = [];
+
+function normalizar(str = "") {
+  return str.toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
+function cap(str) {
+  return str.charAt(0) + str.slice(1).toLowerCase();
+}
+
+function posicionarDropdown() {
+  const input = document.getElementById('ubigeo-input');
+  const dd    = document.getElementById('ubigeo-dropdown');
+  const rect  = input.getBoundingClientRect();
+  const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+  const scrollX = window.pageXOffset || document.documentElement.scrollLeft;
+  dd.style.top   = (rect.bottom + scrollY) + 'px';
+  dd.style.left  = (rect.left   + scrollX) + 'px';
+  dd.style.width = rect.width + 'px';
+}
+
+function buscarUbigeo(q) {
+  const exactas = [];
+  const empieza = [];
+  const contiene = [];
+  
+  const qn = normalizar(q);
+
+  
+  for (const dep of UBIGEO_DATA) {
+
+    for (const prov of dep.provinces) {
+
+      for (const dist of prov.districts) {
+
+        const distrito = normalizar(dist.name);
+        const provincia = normalizar(prov.name);
+        const departamento = normalizar(dep.name);
+
+        const item = {
+          departamento: dep.name,
+          provincia: prov.name,
+          distrito: dist.name,
+          zone: parseInt(dist.zone),      // <-- nuevo
+          zFactor: dist.zFactor           // <-- nuevo
+        };
+
+        if (distrito === qn) {
+          exactas.push(item);
+          continue;
+        }
+
+        if (
+          distrito.startsWith(qn) ||
+          provincia.startsWith(qn) ||
+          departamento.startsWith(qn)
+        ) {
+          if (empieza.length < 50) empieza.push(item);
+          continue;
+        }
+
+        if (
+          distrito.includes(qn) ||
+          provincia.includes(qn) ||
+          departamento.includes(qn)
+        ) {
+          if (contiene.length < 50) contiene.push(item);
+        }
+      }
+    }
+  }
+
+  return [...exactas, ...empieza, ...contiene].slice(0, 12);
+}
+
+
+function renderDropdown() {
+  const dd = document.getElementById('ubigeo-dropdown');
+  if (!ubigeoResultados.length) {
+    dd.innerHTML = '<div class="ubigeo-no-result">Sin resultados</div>';
+    dd.style.display = 'block';
+    return;
+  }
+  const zonaColors = { 1: 'var(--accent5)', 2: 'var(--accent3)', 3: 'var(--accent4)', 4: 'var(--accent6)' };
+  dd.innerHTML = ubigeoResultados.map((e, i) => {
+    const zc = zonaColors[e.zone] || 'var(--accent)';
+    return `<div class="ubigeo-item${i === ubigeoHighlight ? ' highlighted' : ''}" data-idx="${i}">
+      <div class="ubigeo-item-loc">
+        <span class="ubigeo-dist">${cap(e.distrito)}</span>
+        <span class="ubigeo-path">${cap(e.provincia)} · ${cap(e.departamento)}</span>
+      </div>
+      <div class="ubigeo-zona-badge" style="border-color:${zc};color:${zc}">Z${e.zone}</div>
+    </div>`;
+  }).join('');
+  dd.style.display = 'block';
+}
+
+function seleccionarUbigeo(idx) {
+  const e = ubigeoResultados[idx];
+  if (!e) return;
+  ubigeoSeleccionado = { dep: e.departamento, prov: e.provincia, dist: e.distrito, zone: e.zone };
+
+  document.getElementById('ubigeo-input').value = cap(e.distrito) + ', ' + cap(e.provincia) + ', ' + cap(e.departamento);
+  document.getElementById('ubigeo-dropdown').style.display = 'none';
+  document.getElementById('ubigeo-clear').style.display = 'flex';
+
+  const zonaColors = { 1: 'var(--accent5)', 2: 'var(--accent3)', 3: 'var(--accent4)', 4: 'var(--accent6)' };
+  const zc = zonaColors[e.zone] || 'var(--accent)';
+  const tag = document.getElementById('ubigeo-tag');
+  tag.style.display = 'flex';
+  tag.style.borderColor = zc;
+  tag.innerHTML = '<span style="color:' + zc + ';font-weight:700;">✓ Zona ' + e.zone + ' asignada</span>'
+    + '<span style="color:var(--muted);font-size:0.68rem;">&nbsp;— ' + cap(e.distrito) + ', ' + cap(e.provincia) + '</span>';
+
+  applyZonaFromUbigeo(e.zone);
+}
+
+function applyZonaFromUbigeo(zone) {
+  const zonaSelect = document.getElementById('zona');
+  const zonaEfectiva = (['1977','1997','2003'].includes(normaVersion) && zone === 4) ? 3 : zone;
+  for (const opt of zonaSelect.options) {
+    if (parseInt(opt.value) === zonaEfectiva) { opt.selected = true; break; }
+  }
+  zonaSelect.style.borderColor = 'var(--accent2)';
+  zonaSelect.style.boxShadow   = '0 0 0 1px rgba(0,255,136,0.3)';
+  setTimeout(() => { zonaSelect.style.borderColor = ''; zonaSelect.style.boxShadow = ''; }, 1200);
+}
+
+function clearUbigeo() {
+  ubigeoSeleccionado = null;
+  ubigeoResultados   = [];
+  ubigeoHighlight    = -1;
+  document.getElementById('ubigeo-input').value = '';
+  document.getElementById('ubigeo-dropdown').style.display = 'none';
+  document.getElementById('ubigeo-clear').style.display = 'none';
+  document.getElementById('ubigeo-tag').style.display = 'none';
+  document.getElementById('ubigeo-input').focus();
+}
+
+// Inicializar eventos del buscador al cargar el DOM
+function initUbigeo() {
+  const input   = document.getElementById('ubigeo-input');
+  const dd      = document.getElementById('ubigeo-dropdown');
+  const clearBtn = document.getElementById('ubigeo-clear');
+
+  // Posicionar dropdown como position:absolute en body
+  dd.style.position = 'absolute';
+
+  input.addEventListener('input', function () {
+    const q = this.value.trim();
+    clearBtn.style.display = q.length > 0 ? 'flex' : 'none';
+    if (q.length < 2) { dd.style.display = 'none'; ubigeoResultados = []; return; }
+    ubigeoResultados = buscarUbigeo(q);
+    ubigeoHighlight  = -1;
+    posicionarDropdown();
+    renderDropdown();
+  });
+
+  input.addEventListener('keydown', function (e) {
+    if (dd.style.display === 'none') return;
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      ubigeoHighlight = Math.min(ubigeoHighlight + 1, ubigeoResultados.length - 1);
+      renderDropdown();
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      ubigeoHighlight = Math.max(ubigeoHighlight - 1, 0);
+      renderDropdown();
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (ubigeoHighlight >= 0) seleccionarUbigeo(ubigeoHighlight);
+      else if (ubigeoResultados.length === 1) seleccionarUbigeo(0);
+    } else if (e.key === 'Escape') {
+      dd.style.display = 'none';
+    }
+  });
+
+  // Clic en items del dropdown (delegación de eventos)
+  dd.addEventListener('mousedown', function (e) {
+    const item = e.target.closest('.ubigeo-item');
+    if (item) {
+      e.preventDefault(); // evita que el blur cierre antes
+      seleccionarUbigeo(parseInt(item.dataset.idx));
+    }
+  });
+
+  dd.addEventListener('mouseover', function (e) {
+    const item = e.target.closest('.ubigeo-item');
+    if (item) {
+      ubigeoHighlight = parseInt(item.dataset.idx);
+      renderDropdown();
+    }
+  });
+
+  // Cerrar al hacer clic fuera
+  document.addEventListener('click', function (e) {
+    if (!input.contains(e.target) && !dd.contains(e.target)) {
+      dd.style.display = 'none';
+    }
+  });
+
+  clearBtn.addEventListener('click', clearUbigeo);
+}
+
+
+function initSelects() {
+  const depaSelect = document.getElementById('zonaDepartamento');
+  const provSelect = document.getElementById('zonaProvincia');
+  const distSelect = document.getElementById('zonaDistrito');
+
+  depaSelect.addEventListener('change', function () {
+    const depIdx = parseInt(this.value);
+    provSelect.innerHTML = '';
+    distSelect.innerHTML = '';
+    distSelect.disabled = true;
+
+    if (isNaN(depIdx)) { provSelect.disabled = true; return; }
+
+    provSelect.disabled = false;
+    provSelect.appendChild(makeOpt('', '— Provincia —', true));
+    UBIGEO_DATA[depIdx].provinces.forEach((prov, i) =>
+      provSelect.appendChild(makeOpt(i, prov.name)));
+  });
+
+  provSelect.addEventListener('change', function () {
+    const depIdx  = parseInt(depaSelect.value);
+    const provIdx = parseInt(this.value);
+    distSelect.innerHTML = '';
+
+    if (isNaN(provIdx)) { distSelect.disabled = true; return; }
+
+    distSelect.disabled = false;
+    distSelect.appendChild(makeOpt('', '— Distrito —', true));
+    UBIGEO_DATA[depIdx].provinces[provIdx].districts.forEach((dist, i) =>
+      distSelect.appendChild(makeOpt(i, dist.name)));
+  });
+
+  distSelect.addEventListener('change', function () {
+    const depIdx  = parseInt(depaSelect.value);
+    const provIdx = parseInt(provSelect.value);
+    const distIdx = parseInt(this.value);
+    if (isNaN(distIdx)) return;
+
+    const dist = UBIGEO_DATA[depIdx].provinces[provIdx].districts[distIdx];
+    const zone = parseInt(dist.zone);
+
+    // Mostrar tag igual que el buscador de texto
+    ubigeoSeleccionado = {
+      dep:  UBIGEO_DATA[depIdx].name,
+      prov: UBIGEO_DATA[depIdx].provinces[provIdx].name,
+      dist: dist.name,
+      zone,
+    };
+
+    const zonaColors = { 1:'var(--accent5)', 2:'var(--accent3)', 3:'var(--accent4)', 4:'var(--accent6)' };
+    const zc  = zonaColors[zone] || 'var(--accent)';
+    const tag = document.getElementById('ubigeo-tag');
+    tag.style.display     = 'flex';
+    tag.style.borderColor = zc;
+    tag.innerHTML =
+      `<span style="color:${zc};font-weight:700;">✓ Zona ${zone} asignada</span>` +
+      `<span style="color:var(--muted);font-size:0.68rem;">&nbsp;— ${cap(dist.name)}, ${cap(UBIGEO_DATA[depIdx].provinces[provIdx].name)}</span>`;
+
+    applyZonaFromUbigeo(zone);
+  });
+}
 // ════════════════════════════════════════════════════════
 //  SELECTOR DE VERSIÓN
 // ════════════════════════════════════════════════════════
@@ -127,8 +395,21 @@ function setVersion(v) {
   criteriaGroup.style.display = is2026 ? 'block' : 'none';
   recomend.style.display      = is2026 ? 'block' : 'none';
 
+  
+  const distSelect = document.getElementById('zonaDistrito');
+  const provSelect = document.getElementById('zonaProvincia');
+  const depaSelect = document.getElementById('zonaDepartamento');
+  
   const zonaSelect  = document.getElementById('zona');
   const sueloSelect = document.getElementById('suelo');
+  
+  distSelect.innerHTML  = '';
+  provSelect.innerHTML  = '';
+  depaSelect.innerHTML  = '';
+
+  depaSelect.appendChild(makeOpt('', '— Departamento —', true));
+  UBIGEO_DATA.forEach((dep, i) => depaSelect.appendChild(makeOpt(i, dep.name)));
+  
   zonaSelect.innerHTML  = '';
   sueloSelect.innerHTML = '';
 
@@ -153,7 +434,11 @@ function setVersion(v) {
     const labelsNew = { S0:'Roca dura', S1:'Roca o suelo muy rígido', S2:'Suelos rígidos', S3:'Suelos intermedios', S4:'Suelos blandos', S5:'Excepcional (estudio especial)' };
     suelos.forEach(s =>
       sueloSelect.appendChild(makeOpt(s, `${s} — ${labelsNew[s]}`, s === 'S2')));
-  }
+
+    }
+
+  // Re-aplicar zona del ubigeo si hay uno seleccionado
+  if (ubigeoSeleccionado) applyZonaFromUbigeo(ubigeoSeleccionado.zone);
 }
 
 function makeOpt(val, text, selected) {
@@ -181,8 +466,8 @@ function factorC(T, Tp, Tl, version) {
     if (T <= Tl)  return 2.5 * (Tp / T);
     return 2.5 * (Tp * Tl) / (T * T);
   }
-  // Solo 2026 tiene rampa inicial (Art. 18, pág. 13)
-  if (T < 0.2 * Tp) return 1 + 7.5 * (T / Tp);   // C=1 en T=0, sube a C=2.5 en T=0.2Tp
+  // 2026: rampa inicial Art. 18
+  if (T < 0.2 * Tp) return 1 + 7.5 * (T / Tp);
   if (T <= Tp)      return 2.5;
   if (T <= Tl)      return 2.5 * (Tp / T);
   return 2.5 * (Tp * Tl) / (T * T);
@@ -245,7 +530,6 @@ function calcular() {
   }
   errEl.style.display = 'none';
 
-  // Advertencia S5
   let sueloS5Advertencia = false;
   if (normaVersion === '2026' && sueloVal === 'S5') {
     sueloS5Advertencia = true;
@@ -258,8 +542,7 @@ function calcular() {
 
   const { Tp } = p;
 
-  // LÓGICA Ts (E.030-2026)
-  let sueloEfectivo  = sueloVal;
+  let sueloEfectivo   = sueloVal;
   let sueloModificado = false;
   const sueloOriginal = sueloVal;
 
@@ -279,10 +562,8 @@ function calcular() {
   const IpEf = ['2016','2018','2026'].includes(normaVersion) ? Ip : 1.0;
   const R    = R_base * IaEf * IpEf;
 
-  // Construir array de periodos
   const puntos = new Set();
   for (let t = 0; t <= Tmax + 1e-9; t = Math.round((t + paso) * 1000) / 1000) puntos.add(t);
-  // [0, Tp_eff, Tl_eff].forEach(t => { if (t !== null && t !== undefined && t <= Tmax) puntos.add(t); });
   const puntosExtra = normaVersion === '2026'
     ? [0, 0.2 * Tp_eff, Tp_eff, Tl_eff]
     : [0, Tp_eff, Tl_eff];
@@ -318,9 +599,7 @@ function renderChart(datos, Tp, Tl) {
   const canvas = document.getElementById('myChart');
   canvas.style.display = 'block';
 
-  const color = VER_COLOR[normaVersion] || '#00ff88';
-
-  // ← CLAVE: datos como {x, y} para eje X numérico real
+  const color  = VER_COLOR[normaVersion] || '#00ff88';
   const points = datos.map(d => ({ x: d.T, y: d.Sa }));
 
   if (chartInstance) chartInstance.destroy();
@@ -330,12 +609,12 @@ function renderChart(datos, Tp, Tl) {
   grad.addColorStop(1, hexRgba(color, 0.01));
 
   chartInstance = new Chart(ctx, {
-    type: 'scatter',           // ← scatter con showLine para eje X numérico
+    type: 'scatter',
     data: {
       datasets: [{
         label: 'Sa (g)',
         data: points,
-        showLine: true,        // ← dibuja línea entre puntos
+        showLine: true,
         borderColor: color,
         backgroundColor: grad,
         borderWidth: 2.5,
@@ -369,15 +648,15 @@ function renderChart(datos, Tp, Tl) {
       },
       scales: {
         x: {
-          type: 'linear',      // ← eje X numérico continuo
-          min: 0,              // ← fuerza inicio en 0
+          type: 'linear',
+          min: 0,
           title: { display: true, text: 'PERIODO T (s)', color: '#5a7090', font: { family: 'Share Tech Mono', size: 10 }, padding: { top: 8 } },
           ticks: { color: '#5a7090', font: { family: 'Share Tech Mono', size: 10 }, callback: v => v.toFixed(1) },
           grid: { color: 'rgba(30,45,74,0.6)' },
           border: { color: '#1e2d4a' }
         },
         y: {
-          min: 0,              // ← fuerza inicio en 0
+          min: 0,
           title: { display: true, text: 'Sa (g)', color: '#5a7090', font: { family: 'Share Tech Mono', size: 10 }, padding: { bottom: 8 } },
           ticks: { color: '#5a7090', font: { family: 'Share Tech Mono', size: 10 }, callback: v => v.toFixed(3) },
           grid: { color: 'rgba(30,45,74,0.6)' },
@@ -416,6 +695,13 @@ function renderParams(Z, U, S, R, R0, Ia, Ip, Tp, Tl, zona, suelo, Ts, sueloModi
     ? `<div class="param-card"><div class="pk">Ia × Ip</div><div class="pv">${(Ia * Ip).toFixed(2)}</div></div>`
     : `<div class="param-card"><div class="pk">Ia × Ip</div><div class="pv" style="color:var(--muted);font-size:0.75rem">N/A (pre-2016)</div></div>`;
 
+  const ubigeoRow = ubigeoSeleccionado
+    ? `<div class="param-card" style="grid-column:1/-1;border-color:var(--accent2);background:rgba(0,255,136,0.06)">
+        <div class="pk">📍 Ubicación</div>
+        <div class="pv" style="font-size:0.8rem">${cap(ubigeoSeleccionado.dist)}, ${cap(ubigeoSeleccionado.prov)}, ${cap(ubigeoSeleccionado.dep)}</div>
+      </div>`
+    : '';
+
   const bidireccional = normaVersion === '2026'
     ? `<div class="param-card" style="grid-column:1/-1;border-color:var(--accent);background:rgba(0,229,255,0.08)">
         <div class="pk">📐 ANÁLISIS BIDIRECCIONAL (Art. 28)</div>
@@ -452,6 +738,7 @@ function renderParams(Z, U, S, R, R0, Ia, Ip, Tp, Tl, zona, suelo, Ts, sueloModi
       <div class="pk">Norma activa</div>
       <div class="pv" style="font-size:0.9rem;color:${color}">E.030 — ${normaVersion}</div>
     </div>
+    ${ubigeoRow}
     <div class="param-card highlight"><div class="pk">Z — Zona ${zona}</div><div class="pv">${Z.toFixed(2)} <span>g</span></div></div>
     <div class="param-card highlight"><div class="pk">S — ${sueloEfectivo}</div><div class="pv">${S.toFixed(2)}</div></div>
     <div class="param-card"><div class="pk">U — Uso</div><div class="pv">${U.toFixed(1)}</div></div>
@@ -471,6 +758,10 @@ function renderParams(Z, U, S, R, R0, Ia, Ip, Tp, Tl, zona, suelo, Ts, sueloModi
     ${s5Warning}`;
 }
 
+// ════════════════════════════════════════════════════════
+//  RENDERIZAR TABLA
+// ════════════════════════════════════════════════════════
+
 function renderTable(datos) {
   document.getElementById('tabla-panel').style.display = 'block';
   const tbody   = document.getElementById('tabla-body');
@@ -481,14 +772,13 @@ function renderTable(datos) {
     return Math.abs(d.T - multiple * pasoVal) < 1e-9;
   });
 
-  tbody.innerHTML = filas
-    .map(d => `
-      <tr>
-        <td>${d.T.toFixed(3)}</td>
-        <td class="td-num">${d.Sa.toFixed(5)}</td>
-        <td class="td-num">${d.C.toFixed(4)}</td>
-        <td class="td-num">${d.SaMS2.toFixed(4)}</td>
-      </tr>`).join('');
+  tbody.innerHTML = filas.map(d => `
+    <tr>
+      <td>${d.T.toFixed(3)}</td>
+      <td class="td-num">${d.Sa.toFixed(5)}</td>
+      <td class="td-num">${d.C.toFixed(4)}</td>
+      <td class="td-num">${d.SaMS2.toFixed(4)}</td>
+    </tr>`).join('');
 }
 
 // ════════════════════════════════════════════════════════
@@ -507,20 +797,24 @@ function exportTXT() {
 
   const tableRows = datosFiltrados.map(d => `${d.T.toFixed(3)} ${d.Sa.toFixed(4)}`);
 
-  // \r\n para saltos de línea Windows (compatible con NetCAD)
+  // \r\n — saltos de línea Windows, compatible con NetCAD
   const txt = tableRows.join('\r\n');
 
-  // Convertir a ANSI (windows-1252) manualmente via Uint8Array
-  const encoder = new TextEncoder(); // UTF-8
-  const utf8 = encoder.encode(txt);
-
-  // Para texto puramente numérico (solo dígitos, punto, espacio, \r\n)
-  // UTF-8 y ANSI son idénticos — el Blob con charset correcto es suficiente
-  const blob = new Blob([utf8], { type: 'text/plain;charset=windows-1252' });
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = 'Espectro 1.txt';
+  const encoder = new TextEncoder();
+  const utf8    = encoder.encode(txt);
+  const blob    = new Blob([utf8], { type: 'text/plain;charset=windows-1252' });
+  const a       = document.createElement('a');
+  a.href        = URL.createObjectURL(blob);
+  a.download    = 'Espectro 1.txt';
   a.click();
 }
+
 // ── INICIALIZAR ──
+initUbigeo();
+initSelects();   // <-- agregar esta línea
 setVersion('2026');
+
+// Exponer globales (necesario por type="module")
+window.setVersion = setVersion;
+window.calcular   = calcular;
+window.exportTXT  = exportTXT;
