@@ -1,141 +1,7 @@
-// intervenir en caso de ultremega emergencia,caso contrario, intentar evitar a toda costa por el bien de tu salud mental
-//tiempo perdido = 1.3 - hrs
-
 const datos = [
   {
     "name": "AMAZONAS",
     "provinces": [
-      {
-        "name": "CHACHAPOYAS",
-        "districts": [
-          {
-            "name": "ASUNCION",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "BALSAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHACHAPOYAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHETO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHILIQUIN",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHUQUIBAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "GRANADA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUANCAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LA JALCA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LEVANTO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LEYMEBAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MAGDALENA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MARISCAL CASTILLA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MOLINOPAMPA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MONTEVIDEO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "OLLEROS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "QUINJALCA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAN FRANCISCO DE DAGUAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAN ISIDRO DE MAINO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SOLOCO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SONCHE",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
       {
         "name": "BAGUA",
         "districts": [
@@ -248,6 +114,143 @@ const datos = [
           },
           {
             "name": "YAMBRASBAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "CHACHAPOYAS",
+        "districts": [
+          {
+            "name": "ASUNCION",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "BALSAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHACHAPOYAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHETO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHILIQUIN",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHUQUIBAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "GRANADA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUANCAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LA JALCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LEIMEBAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LEVANTO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LEYMEBAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MAGDALENA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MARISCAL CASTILLA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MOLINOPAMPA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MONTEVIDEO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "OLLEROS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "QUINJALCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN FRANCISCO DE DAGUAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN ISIDRO DE MAINO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SOLOCO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SONCHE",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
@@ -377,6 +380,12 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "SAN FRANCISCO DE YESO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "SAN FRANCISCO DEL YESO",
             "zone": "2",
             "zFactor": "0.25",
@@ -414,53 +423,6 @@ const datos = [
           },
           {
             "name": "TRITA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "UTCUBAMBA",
-        "districts": [
-          {
-            "name": "BAGUA GRANDE",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CAJARURO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CUMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "EL MILAGRO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "JAMALCA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LONYA GRANDE",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "YAMON",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
@@ -543,6 +505,53 @@ const datos = [
             "ambito": "UN DISTRITO"
           }
         ]
+      },
+      {
+        "name": "UTCUBAMBA",
+        "districts": [
+          {
+            "name": "BAGUA GRANDE",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CAJARURO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CUMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "EL MILAGRO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "JAMALCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LONYA GRANDE",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "YAMON",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
       }
     ]
   },
@@ -550,8 +559,49 @@ const datos = [
     "name": "ANCASH",
     "provinces": [
       {
+        "name": "AIJA",
+        "districts": [
+          {
+            "name": "AIJA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "CORIS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "HUACLLAN",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "LA MERCED",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "SUCCHA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TRES DISTRITOS"
+          }
+        ]
+      },
+      {
         "name": "ANTONIO RAYMONDI",
         "districts": [
+          {
+            "name": "ACZO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
+          },
           {
             "name": "CHACCHO",
             "zone": "2",
@@ -571,12 +621,6 @@ const datos = [
             "ambito": "TRES DISTRITOS"
           },
           {
-            "name": "ACZO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
             "name": "MIRGAS",
             "zone": "3",
             "zFactor": "0.35",
@@ -591,117 +635,111 @@ const datos = [
         ]
       },
       {
-        "name": "HUARI",
-        "districts": [
-          {
-            "name": "ANRA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "HUACACHI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "HUACCHIS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "PAUCAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "RAPAYAN",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "UCO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "HUARI",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "CAJAY",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "CHAVIN DE HUANTAR",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "HUACHIS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "HUANTAR",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "MASIN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "PONTO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "RAHUAPAMPA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "SAN MARCOS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "SAN PEDRO DE CHANA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          }
-        ]
-      },
-      {
         "name": "ASUNCION",
         "districts": [
           {
-            "name": "CHACAS",
+            "name": "ACOCHACA",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "ACOCHACA",
+            "name": "CHACAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "BOLOGNESI",
+        "districts": [
+          {
+            "name": "ABELARDO PARDO LEZAMETA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ANTONIO RAYMONDI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "AQUIA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CAJACAY",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CANIS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHIQUIAN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "COLQUIOC",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUALLANCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUASTA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUAYLLACAYAN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LA PRIMAVERA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MANGAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PACLLON",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN MIGUEL DE CORPANQUI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TICLLOS",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
@@ -711,12 +749,6 @@ const datos = [
       {
         "name": "CARHUAZ",
         "districts": [
-          {
-            "name": "CARHUAZ",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "ACOPAMPA",
             "zone": "3",
@@ -737,6 +769,12 @@ const datos = [
           },
           {
             "name": "ATAQUERO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CARHUAZ",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
@@ -803,6 +841,58 @@ const datos = [
         ]
       },
       {
+        "name": "CARLOS FERMIN FITZCARRALD",
+        "districts": [
+          {
+            "name": "SAN LUIS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "SAN NICOLAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "YAUYA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRES DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "CASMA",
+        "districts": [
+          {
+            "name": "BUENA VISTA ALTA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CASMA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "COMANDANTE NOEL",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "YAUTAN",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
         "name": "CORONGO",
         "districts": [
           {
@@ -843,6 +933,290 @@ const datos = [
           },
           {
             "name": "YUPAN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "HUARAZ",
+        "districts": [
+          {
+            "name": "COCHABAMBA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "COLCABAMBA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUANCHAY",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUARAZ",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "INDEPENDENCIA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "JANGAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LA LIBERTAD",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "OLLEROS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PAMPAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PAMPAS GRANDE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PARIACOTO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PIRA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TARICA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "HUARI",
+        "districts": [
+          {
+            "name": "ANRA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "CAJAY",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "CHAVIN DE HUANTAR",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "HUACACHI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "HUACCHIS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "HUACHIS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "HUANTAR",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "HUARI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "MASIN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "PAUCAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "PONTO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "RAHUAPAMPA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "RAPAYAN",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "SAN MARCOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "SAN PEDRO DE CHANA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "UCO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "SEIS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "HUARMEY",
+        "districts": [
+          {
+            "name": "COCHAPETI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "CULEBRAS",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "HUARMEY",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "HUAYAN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "MALVAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "HUAYLAS",
+        "districts": [
+          {
+            "name": "CARAZ",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUALLANCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUATA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUAYLAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MATO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PAMPAROMAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PUEBLO LIBRE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANTA CRUZ",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANTO TORIBIO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "YURACMARCA",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
@@ -899,6 +1273,71 @@ const datos = [
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "OCROS",
+        "districts": [
+          {
+            "name": "ACAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "CAJAMARQUILLA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "CARHUAPAMPA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "COCHAS",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "CONGAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "LLIPA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "OCROS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "SAN CRISTOBAL DE RAJAN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "SAN PEDRO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "SANTIAGO DE CHILCAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "OCHO DISTRITOS"
           }
         ]
       },
@@ -1003,6 +1442,136 @@ const datos = [
         ]
       },
       {
+        "name": "RECUAY",
+        "districts": [
+          {
+            "name": "CATAC",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "COTAPARACO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUAYLLAPAMPA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LLACLLIN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MARCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PAMPAS CHICO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PARARIN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "RECUAY",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TAPACOCHA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TICAPAMPA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "SANTA",
+        "districts": [
+          {
+            "name": "CACERES DEL PERU",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "CHIMBOTE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "COISHCO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "MACATE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "MORO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "NEPENA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "NEPEÑA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "NUEVO CHIMBOTE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "SAMANCO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "SANTA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "SEIS DISTRITOS"
+          }
+        ]
+      },
+      {
         "name": "SIHUAS",
         "districts": [
           {
@@ -1068,79 +1637,8 @@ const datos = [
         ]
       },
       {
-        "name": "HUAYLAS",
-        "districts": [
-          {
-            "name": "CARAZ",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUALLANCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUATA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUAYLAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MATO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PAMPAROMAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PUEBLO LIBRE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SANTA CRUZ",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SANTO TORIBIO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "YURACMARCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
         "name": "YUNGAY",
         "districts": [
-          {
-            "name": "YUNGAY",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "CASCAPARA",
             "zone": "3",
@@ -1182,465 +1680,11 @@ const datos = [
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "HUARAZ",
-        "districts": [
+          },
           {
-            "name": "HUARAZ",
+            "name": "YUNGAY",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "COCHABAMBA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "COLCABAMBA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUANCHAY",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "INDEPENDENCIA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "JANGAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LA LIBERTAD",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "OLLEROS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PAMPAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PARIACOTO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PIRA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "TARICA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "BOLOGNESI",
-        "districts": [
-          {
-            "name": "CHIQUIAN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "ABELARDO PARDO LEZAMETA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "ANTONIO RAYMONDI",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "AQUIA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CAJACAY",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CANIS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "COLQUIOC",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUALLANCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUASTA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUAYLLACAYAN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LA PRIMAVERA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MANGAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PACLLON",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAN MIGUEL DE CORPANQUI",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "TICLLOS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "RECUAY",
-        "districts": [
-          {
-            "name": "RECUAY",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CATAC",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "COTAPARACO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUAYLLAPAMPA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LLACLLIN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MARCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PAMPAS CHICO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PARARIN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "TAPACOCHA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "TICAPAMPA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "AIJA",
-        "districts": [
-          {
-            "name": "AIJA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOS DISTRITOS"
-          },
-          {
-            "name": "CORIS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOS DISTRITOS"
-          },
-          {
-            "name": "HUACLLAN",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "LA MERCED",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "SUCCHA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TRES DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "OCROS",
-        "districts": [
-          {
-            "name": "OCROS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "ACAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "CAJAMARQUILLA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "CARHUAPAMPA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "CONGAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "LLIPA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "SAN CRISTOBAL DE RAJAN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "SANTIAGO DE CHILCAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "COCHAS",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "DOS DISTRITOS"
-          },
-          {
-            "name": "SAN PEDRO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "DOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "HUARMEY",
-        "districts": [
-          {
-            "name": "HUARMEY",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "DOS DISTRITOS"
-          },
-          {
-            "name": "CULEBRAS",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "DOS DISTRITOS"
-          },
-          {
-            "name": "COCHAPETI",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "HUAYAN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "MALVAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TRES DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "SANTA",
-        "districts": [
-          {
-            "name": "CACERES DEL PERU",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "MACATE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "MORO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "CHIMBOTE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "COISHCO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "NEPEÑA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "SAMANCO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "SANTA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "NUEVO CHIMBOTE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "SEIS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "CASMA",
-        "districts": [
-          {
-            "name": "CASMA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "BUENA VISTA ALTA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "COMANDANTE NOEL",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "YAUTAN",
-            "zone": "4",
-            "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
           }
         ]
@@ -1651,10 +1695,461 @@ const datos = [
     "name": "APURIMAC",
     "provinces": [
       {
+        "name": "ABANCAY",
+        "districts": [
+          {
+            "name": "ABANCAY",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHACOCHE",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CIRCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CURAHUASI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUANIPACA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LAMBRAMA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PICHIRHUA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN PEDRO DE CACHORA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TAMBURCO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "ANDAHUAYLAS",
+        "districts": [
+          {
+            "name": "ANDAHUAYLAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRECE DISTRITOS"
+          },
+          {
+            "name": "ANDARAPA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRECE DISTRITOS"
+          },
+          {
+            "name": "CHIARA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "HUANCARAMA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRECE DISTRITOS"
+          },
+          {
+            "name": "HUANCARAY",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRECE DISTRITOS"
+          },
+          {
+            "name": "HUAYANA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "JOSE MARIA ARGUEDAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRECE DISTRITOS"
+          },
+          {
+            "name": "KAQUIABAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRECE DISTRITOS"
+          },
+          {
+            "name": "KISHUARA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRECE DISTRITOS"
+          },
+          {
+            "name": "PACOBAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRECE DISTRITOS"
+          },
+          {
+            "name": "PACUCHA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRECE DISTRITOS"
+          },
+          {
+            "name": "PAMPACHIRI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "POMACOCHA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "SAN ANTONIO DE CACHI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRECE DISTRITOS"
+          },
+          {
+            "name": "SAN JERONIMO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRECE DISTRITOS"
+          },
+          {
+            "name": "SAN MIGUEL DE CHACCRAMPA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "SANTA MARIA DE CHICMO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRECE DISTRITOS"
+          },
+          {
+            "name": "TALAVERA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRECE DISTRITOS"
+          },
+          {
+            "name": "TUMAY HUARACA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "TURPO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRECE DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "ANTABAMBA",
+        "districts": [
+          {
+            "name": "ANTABAMBA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "EL ORO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUAQUIRCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "JUAN ESPINOZA MEDRANO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "OROPESA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PACHACONAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SABAINO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "AYMARAES",
+        "districts": [
+          {
+            "name": "CAPAYA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "CARAYBAMBA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "CHALHUANCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "CHAPIMARCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "COLCABAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "COTARUSE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "HUAYLLO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "IHUAYLLO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "JUSTO APU SAHUARAURA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "LUCRE",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "POCOHUANCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "SAN JUAN DE CHACNA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "SAN JUAN DE CHACÑA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "SANAYCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "SAÑAYCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "SORAYA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "TAPAIRIHUA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "TINTAY",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "TORAYA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "YANACA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "CHINCHEROS",
+        "districts": [
+          {
+            "name": "AHUAYRO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ANCO-HUALLO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ANCO_HUALLO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHINCHEROS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "COCHARCAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "EL PORVENIR",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUACCANA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LOS CHANKAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "OCOBAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ONGOY",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "RANRACANCHA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ROCCHACC",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ROCHACC",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "URANMARCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
         "name": "COTABAMBAS",
         "districts": [
           {
             "name": "CALLHUAHUACHO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHALLHUAHUACHO",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
@@ -1779,409 +2274,6 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           }
         ]
-      },
-      {
-        "name": "ABANCAY",
-        "districts": [
-          {
-            "name": "ABANCAY",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHACOCHE",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CIRCA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CURAHUASI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUANIPACA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LAMBRAMA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PICHIRHUA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAN PEDRO DE CACHORA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "TAMBURCO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "CHINCHEROS",
-        "districts": [
-          {
-            "name": "ANCO-HUALLO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHINCHEROS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "COCHARCAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUACCANA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "OCOBAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "ONGOY",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "RANRACANCHA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "URANMARCA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "EL PORVENIR",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LOS CHANKAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "ROCHACC",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "ANDAHUAYLAS",
-        "districts": [
-          {
-            "name": "ANDAHUAYLAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TRECE DISTRITOS"
-          },
-          {
-            "name": "ANDARAPA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TRECE DISTRITOS"
-          },
-          {
-            "name": "HUANCARAMA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TRECE DISTRITOS"
-          },
-          {
-            "name": "HUANCARAY",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TRECE DISTRITOS"
-          },
-          {
-            "name": "KAQUIABAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TRECE DISTRITOS"
-          },
-          {
-            "name": "KISHUARA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TRECE DISTRITOS"
-          },
-          {
-            "name": "PACOBAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TRECE DISTRITOS"
-          },
-          {
-            "name": "PACUCHA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TRECE DISTRITOS"
-          },
-          {
-            "name": "SAN ANTONIO DE CACHI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TRECE DISTRITOS"
-          },
-          {
-            "name": "SAN JERONIMO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TRECE DISTRITOS"
-          },
-          {
-            "name": "SANTA MARIA DE CHICMO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TRECE DISTRITOS"
-          },
-          {
-            "name": "TALAVERA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TRECE DISTRITOS"
-          },
-          {
-            "name": "TURPO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TRECE DISTRITOS"
-          },
-          {
-            "name": "CHIARA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "HUAYANA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "PAMPACHIRI",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "POMACOCHA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "SAN MIGUEL DE CHACCRAMPA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "TUMAY HUARACA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "AYMARAES",
-        "districts": [
-          {
-            "name": "CHAPIMARCA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CINCO DISTRITOS"
-          },
-          {
-            "name": "COLCABAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CINCO DISTRITOS"
-          },
-          {
-            "name": "LUCRE",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CINCO DISTRITOS"
-          },
-          {
-            "name": "SAN JUAN DE CHACÑA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CINCO DISTRITOS"
-          },
-          {
-            "name": "TINTAY",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CINCO DISTRITOS"
-          },
-          {
-            "name": "CAPAYA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "CARAYBAMBA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "CHALHUANCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "COTARUSE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "HUAYLLO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "JUSTO APU SAHUARAURA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "POCOHUANCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "SAÑAYCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "SORAYA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "TAPAIRIHUA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "TORAYA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "YANACA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "ANTABAMBA",
-        "districts": [
-          {
-            "name": "ANTABAMBA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "EL ORO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUAQUIRCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "JUAN ESPINOZA MEDRANO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "OROPESA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PACHACONAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SABAINO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
       }
     ]
   },
@@ -2189,85 +2281,430 @@ const datos = [
     "name": "AREQUIPA",
     "provinces": [
       {
-        "name": "LA UNION",
+        "name": "AREQUIPA",
         "districts": [
           {
-            "name": "COTAHUASI",
+            "name": "ALTO SELVA ALEGRE",
             "zone": "3",
             "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "AREQUIPA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "CAYMA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "CERRO COLORADO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "CHARACATO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "CHIGUATA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "JACOBO HUNTER",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "JOSE LUIS BUSTAMANTE Y RIVERO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "LA JOYA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "MARIANO MELGAR",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "MIRAFLORES",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "MOLLEBAYA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "PAUCARPATA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "POCSI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "POLOBAYA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "QUEQUENA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "QUEQUEÑA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "SABANDIA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "SACHACA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "SAN JUAN DE SIGUAS",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "SAN JUAN DE TARUCANI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "SANTA ISABEL DE SIGUAS",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "SANTA RITA DE SIGUAS",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "SOCABAYA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "TIABAYA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "UCHUMAYO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "VITOR",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "YANAHUARA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          },
+          {
+            "name": "YARABAMBA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "YURA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTIUN DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "CAMANA",
+        "districts": [
+          {
+            "name": "CAMANA",
+            "zone": "4",
+            "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "ALCA",
-            "zone": "3",
-            "zFactor": "0.35",
+            "name": "JOSE MARIA QUIMPER",
+            "zone": "4",
+            "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "CHARCANA",
-            "zone": "3",
-            "zFactor": "0.35",
+            "name": "MARIANO NICOLAS VALCARCEL",
+            "zone": "4",
+            "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "HUAYNACOTAS",
-            "zone": "3",
-            "zFactor": "0.35",
+            "name": "MARISCAL CACERES",
+            "zone": "4",
+            "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "PAMPAMARCA",
-            "zone": "3",
-            "zFactor": "0.35",
+            "name": "NICOLAS DE PIEROLA",
+            "zone": "4",
+            "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "PUYCA",
-            "zone": "3",
-            "zFactor": "0.35",
+            "name": "OCONA",
+            "zone": "4",
+            "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "QUECHUALLA",
-            "zone": "3",
-            "zFactor": "0.35",
+            "name": "OCOÑA",
+            "zone": "4",
+            "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "SAYLA",
-            "zone": "3",
-            "zFactor": "0.35",
+            "name": "QUILCA",
+            "zone": "4",
+            "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "TAURIA",
-            "zone": "3",
-            "zFactor": "0.35",
+            "name": "SAMUEL PASTOR",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "CARAVELI",
+        "districts": [
+          {
+            "name": "ACARI",
+            "zone": "4",
+            "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "TOMEPAMPA",
-            "zone": "3",
-            "zFactor": "0.35",
+            "name": "ATICO",
+            "zone": "4",
+            "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "TORO",
+            "name": "ATIQUIPA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "BELLA UNION",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CAHUACHO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CARAVELI",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHALA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHAPARRA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUANUHUANU",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "JAQUI",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LOMAS",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "QUICACHA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "YAUCA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "CASTILLA",
+        "districts": [
+          {
+            "name": "ANDAGUA",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "APLAO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "AYO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "CHACHAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "CHILCAYMARCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "CHOCO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "HUANCARQUI",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "MACHAGUAY",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "ORCOPAMPA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "PAMPACOLCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "TIPAN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "UNON",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "URACA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "UÑON",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "VIRACO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
           }
         ]
       },
       {
         "name": "CAYLLOMA",
         "districts": [
-          {
-            "name": "CHIVAY",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "ACHOMA",
             "zone": "3",
@@ -2288,6 +2725,12 @@ const datos = [
           },
           {
             "name": "CAYLLOMA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHIVAY",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
@@ -2341,6 +2784,12 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "MAJES",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "UN DISTRITO"
+          },
+          {
             "name": "SAN ANTONIO DE CHUCA",
             "zone": "3",
             "zFactor": "0.35",
@@ -2375,286 +2824,18 @@ const datos = [
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MAJES",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "UN DISTRITO"
-          }
-        ]
-      },
-      {
-        "name": "CASTILLA",
-        "districts": [
-          {
-            "name": "ANDAGUA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "AYO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "CHACHAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "CHILCAYMARCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "CHOCO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "MACHAGUAY",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "ORCOPAMPA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "PAMPACOLCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "TIPAN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "UÑON",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "VIRACO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "APLAO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "HUANCARQUI",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "URACA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TRES DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "AREQUIPA",
-        "districts": [
-          {
-            "name": "AREQUIPA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "ALTO SELVA ALEGRE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "CAYMA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "CERRO COLORADO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "CHARACATO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "CHIGUATA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "JACOBO HUNTER",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "JOSE LUIS BUSTAMANTE Y RIVERO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "MARIANO MELGAR",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "MIRAFLORES",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "MOLLEBAYA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "PAUCARPATA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "POCSI",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "QUEQUEÑA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "SABANDIA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "SACHACA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "SAN JUAN DE TARUCANI",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "SOCABAYA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "TIABAYA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "YANAHUARA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "YURA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTIUN DISTRITOS"
-          },
-          {
-            "name": "LA JOYA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "POLOBAYA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "SAN JUAN DE SIGUAS",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "SANTA ISABEL DE SIGUAS",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "SANTA RITA DE SIGUAS",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "UCHUMAYO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "VITOR",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "YARABAMBA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "OCHO DISTRITOS"
           }
         ]
       },
       {
         "name": "CONDESUYOS",
         "districts": [
+          {
+            "name": "ANDARAY",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "CINCO DISTRITOS"
+          },
           {
             "name": "CAYARANI",
             "zone": "3",
@@ -2668,19 +2849,7 @@ const datos = [
             "ambito": "TRES DISTRITOS"
           },
           {
-            "name": "SALAMANCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
             "name": "CHUQUIBAMBA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "CINCO DISTRITOS"
-          },
-          {
-            "name": "ANDARAY",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "CINCO DISTRITOS"
@@ -2698,6 +2867,12 @@ const datos = [
             "ambito": "CINCO DISTRITOS"
           },
           {
+            "name": "SALAMANCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
             "name": "YANAQUIHUA",
             "zone": "4",
             "zFactor": "0.45",
@@ -2708,12 +2883,6 @@ const datos = [
       {
         "name": "ISLAY",
         "districts": [
-          {
-            "name": "MOLLENDO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "COCACHACRA",
             "zone": "4",
@@ -2739,6 +2908,12 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "MOLLENDO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "PUNTA DE BOMBON",
             "zone": "4",
             "zFactor": "0.45",
@@ -2747,137 +2922,72 @@ const datos = [
         ]
       },
       {
-        "name": "CAMANA",
+        "name": "LA UNION",
         "districts": [
           {
-            "name": "CAMANA",
-            "zone": "4",
-            "zFactor": "0.45",
+            "name": "ALCA",
+            "zone": "3",
+            "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "JOSE MARIA QUIMPER",
-            "zone": "4",
-            "zFactor": "0.45",
+            "name": "CHARCANA",
+            "zone": "3",
+            "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "MARIANO NICOLAS VALCARCEL",
-            "zone": "4",
-            "zFactor": "0.45",
+            "name": "COTAHUASI",
+            "zone": "3",
+            "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "MARISCAL CACERES",
-            "zone": "4",
-            "zFactor": "0.45",
+            "name": "HUAYNACOTAS",
+            "zone": "3",
+            "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "NICOLAS DE PIEROLA",
-            "zone": "4",
-            "zFactor": "0.45",
+            "name": "PAMPAMARCA",
+            "zone": "3",
+            "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "OCOÑA",
-            "zone": "4",
-            "zFactor": "0.45",
+            "name": "PUYCA",
+            "zone": "3",
+            "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "QUILCA",
-            "zone": "4",
-            "zFactor": "0.45",
+            "name": "QUECHUALLA",
+            "zone": "3",
+            "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "SAMUEL PASTOR",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "CARAVELI",
-        "districts": [
-          {
-            "name": "CARAVELI",
-            "zone": "4",
-            "zFactor": "0.45",
+            "name": "SAYLA",
+            "zone": "3",
+            "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "ACARI",
-            "zone": "4",
-            "zFactor": "0.45",
+            "name": "TAURIA",
+            "zone": "3",
+            "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "ATICO",
-            "zone": "4",
-            "zFactor": "0.45",
+            "name": "TOMEPAMPA",
+            "zone": "3",
+            "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "ATIQUIPA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "BELLA UNION",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CAHUACHO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHALA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHAPARRA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUANUHUANU",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "JAQUI",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LOMAS",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "QUICACHA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "YAUCA",
-            "zone": "4",
-            "zFactor": "0.45",
+            "name": "TORO",
+            "zone": "3",
+            "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           }
         ]
@@ -2887,301 +2997,6 @@ const datos = [
   {
     "name": "AYACUCHO",
     "provinces": [
-      {
-        "name": "HUANTA",
-        "districts": [
-          {
-            "name": "AYAHUANCO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "IGUAIN",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUAMANGUILLA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUANTA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LLOCHEGUA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LURICOCHA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SANTILLANA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SIVIA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHACA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "LA MAR",
-        "districts": [
-          {
-            "name": "ANCO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "AYNA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHILCAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHUNGUI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LUIS CARRANZA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAN MIGUEL",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SANTA ROSA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "TAMBO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "ORONCCOY",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "HUAMANGA",
-        "districts": [
-          {
-            "name": "ACOCRO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "ACOSVINCHOS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "AYACUCHO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "JESUS NAZARENO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "OCROS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "PACAYCASA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "QUINUA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "SAN JOSE DE TICLLAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "SANTIAGO DE PISCHA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "TAMBILLO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "CARMEN ALTO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CINCO DISTRITOS"
-          },
-          {
-            "name": "CHIARA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CINCO DISTRITOS"
-          },
-          {
-            "name": "SAN JUAN BAUTISTA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CINCO DISTRITOS"
-          },
-          {
-            "name": "SOCOS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CINCO DISTRITOS"
-          },
-          {
-            "name": "VINCHOS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CINCO DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "VILCASHUAMAN",
-        "districts": [
-          {
-            "name": "CONCEPCION",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "UN DISTRITO"
-          },
-          {
-            "name": "ACCOMARCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "CARHUANCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "HUAMBALPA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "INDEPENDENCIA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "SAURAMA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "VILCASHUAMAN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "VISCHONGO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SIETE DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "HUANCA SANCOS",
-        "districts": [
-          {
-            "name": "CARAPO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SACSAMARCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SANCOS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SANTIAGO DE LUCANAMARCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
       {
         "name": "CANGALLO",
         "districts": [
@@ -3220,6 +3035,528 @@ const datos = [
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "HUAMANGA",
+        "districts": [
+          {
+            "name": "ACOCRO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "ACOS VINCHOS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "ACOSVINCHOS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "ANDRES AVELINO CACERES DORREGARAY",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "AYACUCHO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "CARMEN ALTO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "CHIARA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "JESUS NAZARENO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "OCROS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "PACAYCASA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "QUINUA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "SAN JOSE DE TICLLAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "SAN JUAN BAUTISTA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "SANTIAGO DE PISCHA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "SOCOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "TAMBILLO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "VINCHOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CINCO DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "HUANCA SANCOS",
+        "districts": [
+          {
+            "name": "CARAPO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SACSAMARCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANCOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANTIAGO DE LUCANAMARCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "HUANTA",
+        "districts": [
+          {
+            "name": "AYAHUANCO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CANAYRE",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHACA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUAMANGUILLA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUANTA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "IGUAIN",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LLOCHEGUA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LURICOCHA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PUCACOLPA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PUTIS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANTILLANA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SIVIA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "UCHURACCAY",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "LA MAR",
+        "districts": [
+          {
+            "name": "ANCHIHUAY",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ANCO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "AYNA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHILCAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHUNGUI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LUIS CARRANZA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "NINABAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ORONCCOY",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PATIBAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "RIO MAGDALENA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAMUGARI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN MIGUEL",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANTA ROSA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TAMBO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "UNION PROGRESO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "LUCANAS",
+        "districts": [
+          {
+            "name": "AUCARA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "CABANA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "CARMEN SALCEDO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "CHAVINA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "CHAVIÑA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "CHIPAO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "HUAC-HUAS",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "LARAMATE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "LEONCIO PRADO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "LLAUTA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "LUCANAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "OCANA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "OCAÑA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "OTOCA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "PUQUIO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "SAISA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "SAN CRISTOBAL",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "SAN JUAN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "SAN PEDRO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "SAN PEDRO DE PALCO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "SANCOS",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "SANTA ANA DE HUAYCAHUACHO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "SANTA LUCIA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "ONCE DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "PARINACOCHAS",
+        "districts": [
+          {
+            "name": "CHUMPI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "CORACORA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "CORONEL CASTANEDA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "CORONEL CASTAÑEDA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "PACAPAUSA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "PULLO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "PUYUSCA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "SAN FRANCISCO DE RAVACAYCU",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "SAN FRANCISCO DE RIVACAYCO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "UPAHUACHO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
           }
         ]
       },
@@ -3305,6 +3642,12 @@ const datos = [
           },
           {
             "name": "CHILCAYOC",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUACANA",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
@@ -3399,6 +3742,12 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "HUALLA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "HUAMANQUIQUIA",
             "zone": "3",
             "zFactor": "0.35",
@@ -3437,186 +3786,55 @@ const datos = [
         ]
       },
       {
-        "name": "PARINACOCHAS",
+        "name": "VILCASHUAMAN",
         "districts": [
           {
-            "name": "CHUMPI",
+            "name": "ACCOMARCA",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
+            "ambito": "SIETE DISTRITOS"
           },
           {
-            "name": "CORACORA",
+            "name": "CARHUANCA",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
+            "ambito": "SIETE DISTRITOS"
           },
           {
-            "name": "CORONEL CASTAÑEDA",
+            "name": "CONCEPCION",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "UN DISTRITO"
+          },
+          {
+            "name": "HUAMBALPA",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
+            "ambito": "SIETE DISTRITOS"
           },
           {
-            "name": "PACAPAUSA",
+            "name": "INDEPENDENCIA",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
+            "ambito": "SIETE DISTRITOS"
           },
           {
-            "name": "SAN FRANCISCO DE RAVACAYCU",
+            "name": "SAURAMA",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
+            "ambito": "SIETE DISTRITOS"
           },
           {
-            "name": "UPAHUACHO",
+            "name": "VILCASHUAMAN",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
+            "ambito": "SIETE DISTRITOS"
           },
           {
-            "name": "PULLO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "DOS DISTRITOS"
-          },
-          {
-            "name": "PUYUSCA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "DOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "LUCANAS",
-        "districts": [
-          {
-            "name": "AUCARA",
+            "name": "VISCHONGO",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "CABANA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "CARMEN SALCEDO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "CHAVIÑA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "CHIPAO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "LUCANAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "PUQUIO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "SAN JUAN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "SAN PEDRO DE PALCO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "SANTA ANA DE HUAYCAHUACHO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "HUAC-HUAS",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "LARAMATE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "LEONCIO PRADO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "LLAUTA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "OCAÑA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "OTOCA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "SAISA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "SAN CRISTOBAL",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "SAN PEDRO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "SANCOS",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "SANTA LUCIA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "ONCE DISTRITOS"
+            "ambito": "SIETE DISTRITOS"
           }
         ]
       }
@@ -3626,72 +3844,120 @@ const datos = [
     "name": "CAJAMARCA",
     "provinces": [
       {
-        "name": "HUALGAYOC",
+        "name": "CAJABAMBA",
         "districts": [
           {
-            "name": "BAMBAMARCA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
+            "name": "CACHACHI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
           },
           {
-            "name": "CHUGUR",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
+            "name": "CAJABAMBA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
           },
           {
-            "name": "HUALGAYOC",
+            "name": "CONDEBAMBA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "SITACOCHA",
             "zone": "2",
             "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
+            "ambito": "UN DISTRITO"
           }
         ]
       },
       {
-        "name": "SAN IGNACIO",
+        "name": "CAJAMARCA",
         "districts": [
           {
-            "name": "SAN IGNACIO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
+            "name": "ASUNCION",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
           },
           {
-            "name": "CHIRINOS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
+            "name": "CAJAMARCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
           },
           {
-            "name": "HUARANGO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
+            "name": "CHETILLA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
           },
           {
-            "name": "LA COIPA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
+            "name": "COSPAN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
           },
           {
-            "name": "NAMBALLE",
+            "name": "ENCANADA",
             "zone": "2",
             "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
+            "ambito": "UN DISTRITO"
           },
           {
-            "name": "SAN JOSE DE LOURDES",
+            "name": "ENCAÑADA",
             "zone": "2",
             "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
+            "ambito": "UN DISTRITO"
           },
           {
-            "name": "TABACONAS",
+            "name": "JESUS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "LLACANORA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "LOS BANOS DEL INCA",
             "zone": "2",
             "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
+            "ambito": "UN DISTRITO"
+          },
+          {
+            "name": "LOS BAÑOS DEL INCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "MAGDALENA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "MATARA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "NAMORA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "SAN JUAN",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "UN DISTRITO"
           }
         ]
       },
@@ -3735,6 +4001,12 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "LA LIBERTAD DE PALLAN",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "MIGUEL IGLESIAS",
             "zone": "2",
             "zFactor": "0.25",
@@ -3763,11 +4035,183 @@ const datos = [
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
-          },
+          }
+        ]
+      },
+      {
+        "name": "CHOTA",
+        "districts": [
           {
-            "name": "LA LIBERTAD DE PALLAN",
+            "name": "ANGUIA",
             "zone": "2",
             "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "CHADIN",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "CHALAMARCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "CHIGUIRIP",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "CHIMBAN",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "CHOROPAMPA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "CHOTA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "COCHABAMBA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "CONCHAN",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "HUAMBOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "LAJAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "LLAMA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "MIRACOSTA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "PACCHA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "PION",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "QUEROCOTO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "SAN JUAN DE LICUPIS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "TACABAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "TOCMOCHE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SIETE DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "CONTUMAZA",
+        "districts": [
+          {
+            "name": "CHILETE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CONTUMAZA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CUPISNIQUE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "GUZMANGO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN BENITO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANTA CRUZ DE TOLED",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANTA CRUZ DE TOLEDO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TANTARICA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "YONAN",
+            "zone": "3",
+            "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           }
         ]
@@ -3775,12 +4219,6 @@ const datos = [
       {
         "name": "CUTERVO",
         "districts": [
-          {
-            "name": "CUTERVO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CATORCE DISTRITOS"
-          },
           {
             "name": "CALLAYUC",
             "zone": "2",
@@ -3800,6 +4238,12 @@ const datos = [
             "ambito": "CATORCE DISTRITOS"
           },
           {
+            "name": "CUTERVO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CATORCE DISTRITOS"
+          },
+          {
             "name": "LA RAMADA",
             "zone": "2",
             "zFactor": "0.25",
@@ -3810,6 +4254,12 @@ const datos = [
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "CATORCE DISTRITOS"
+          },
+          {
+            "name": "QUEROCOTILLO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "UN DISTRITO"
           },
           {
             "name": "SAN ANDRES DE CUTERVO",
@@ -3858,24 +4308,35 @@ const datos = [
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "CATORCE DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "HUALGAYOC",
+        "districts": [
+          {
+            "name": "BAMBAMARCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "QUEROCOTILLO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "UN DISTRITO"
+            "name": "CHUGUR",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUALGAYOC",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
           }
         ]
       },
       {
         "name": "JAEN",
         "districts": [
-          {
-            "name": "JAEN",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "OCHO DISTRITOS"
-          },
           {
             "name": "BELLAVISTA",
             "zone": "2",
@@ -3901,19 +4362,13 @@ const datos = [
             "ambito": "OCHO DISTRITOS"
           },
           {
+            "name": "JAEN",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
             "name": "LAS PIRIAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "SAN JOSE DEL ALTO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "SANTA ROSA",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "OCHO DISTRITOS"
@@ -3941,12 +4396,83 @@ const datos = [
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "SAN JOSE DEL ALTO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "SANTA ROSA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "OCHO DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "SAN IGNACIO",
+        "districts": [
+          {
+            "name": "CHIRINOS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUARANGO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LA COIPA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "NAMBALLE",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN IGNACIO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN JOSE DE LOURDES",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TABACONAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
           }
         ]
       },
       {
         "name": "SAN MARCOS",
         "districts": [
+          {
+            "name": "CHANCAY",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "EDUARDO VILLANUEVA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
+          },
           {
             "name": "GREGORIO PITA",
             "zone": "2",
@@ -3972,18 +4498,6 @@ const datos = [
             "ambito": "CUATRO DISTRITOS"
           },
           {
-            "name": "CHANCAY",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "EDUARDO VILLANUEVA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
             "name": "PEDRO GALVEZ",
             "zone": "3",
             "zFactor": "0.35",
@@ -3992,280 +4506,8 @@ const datos = [
         ]
       },
       {
-        "name": "CHOTA",
-        "districts": [
-          {
-            "name": "CHOTA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "ANGUIA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "CHADIN",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "CHIGUIRIP",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "CHIMBAN",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "CHOROPAMPA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "CONCHAN",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "LAJAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "PACCHA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "PION",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "TACABAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "COCHABAMBA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "HUAMBOS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "LLAMA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "MIRACOSTA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "QUEROCOTO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "SAN JUAN DE LICUPIS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "TOCMOCHE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SIETE DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "CAJABAMBA",
-        "districts": [
-          {
-            "name": "CAJABAMBA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "CACHACHI",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "CONDEBAMBA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "SITACOCHA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "UN DISTRITO"
-          }
-        ]
-      },
-      {
-        "name": "CAJAMARCA",
-        "districts": [
-          {
-            "name": "ENCAÑADA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "UN DISTRITO"
-          },
-          {
-            "name": "CAJAMARCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "ASUNCION",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "CHETILLA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "COSPAN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "JESUS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "LLACANORA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "LOS BAÑOS DEL INCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "MAGDALENA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "MATARA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "NAMORA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "CONTUMAZA",
-        "districts": [
-          {
-            "name": "CONTUMAZA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHILETE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CUPISNIQUE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "GUZMANGO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAN BENITO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SANTA CRUZ DE TOLED",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "TANTARICA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "YONAN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
         "name": "SAN MIGUEL",
         "districts": [
-          {
-            "name": "SAN MIGUEL",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "BOLIVAR",
             "zone": "3",
@@ -4321,6 +4563,12 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "SAN MIGUEL",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "SAN SILVESTRE DE COCHAN",
             "zone": "3",
             "zFactor": "0.35",
@@ -4344,12 +4592,6 @@ const datos = [
         "name": "SAN PABLO",
         "districts": [
           {
-            "name": "SAN PABLO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
             "name": "SAN BERNARDINO",
             "zone": "3",
             "zFactor": "0.35",
@@ -4357,6 +4599,12 @@ const datos = [
           },
           {
             "name": "SAN LUIS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN PABLO",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
@@ -4373,12 +4621,6 @@ const datos = [
         "name": "SANTA CRUZ",
         "districts": [
           {
-            "name": "SANTA CRUZ",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
             "name": "ANDABAMBA",
             "zone": "3",
             "zFactor": "0.35",
@@ -4386,6 +4628,12 @@ const datos = [
           },
           {
             "name": "CATACHE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHANCAYBANOS",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
@@ -4410,6 +4658,12 @@ const datos = [
           },
           {
             "name": "PULAN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANTA CRUZ",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
@@ -4449,13 +4703,13 @@ const datos = [
         "name": "CALLAO",
         "districts": [
           {
-            "name": "CALLAO",
+            "name": "BELLAVISTA",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "BELLAVISTA",
+            "name": "CALLAO",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
@@ -4479,13 +4733,60 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "MI PERU",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "VENTANILLA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "PROV. CONST. DEL CALLAO",
+        "districts": [
+          {
+            "name": "BELLAVISTA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CALLAO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CARMEN DE LA LEGUA REYNOSO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LA PERLA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LA PUNTA",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
             "name": "MI PERU",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "VENTANILLA",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
@@ -4497,6 +4798,112 @@ const datos = [
   {
     "name": "CUSCO",
     "provinces": [
+      {
+        "name": "ACOMAYO",
+        "districts": [
+          {
+            "name": "ACOMAYO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ACOPIA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ACOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MOSOC LLACTA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "UN DISTRITO"
+          },
+          {
+            "name": "POMACANCHI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "RONDOCAN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANGARARA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "ANTA",
+        "districts": [
+          {
+            "name": "ANCAHUASI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ANTA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CACHIMAYO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHINCHAYPUJIO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUAROCONDO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LIMATAMBO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MOLLEPATA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PUCYURA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ZURITE",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
       {
         "name": "CALCA",
         "districts": [
@@ -4551,46 +4958,442 @@ const datos = [
         ]
       },
       {
-        "name": "URUBAMBA",
+        "name": "CANAS",
         "districts": [
           {
-            "name": "URUBAMBA",
+            "name": "CHECCA",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "CHINCHERO",
+            "name": "KUNTURKANKI",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "HUAYLLABAMBA",
+            "name": "LANGUI",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "MACHUPICCHU",
+            "name": "LAYO",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "MARAS",
+            "name": "PAMPAMARCA",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "OLLANTAYTAMBO",
+            "name": "QUEHUE",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "YUCAY",
+            "name": "TUPAC AMARU",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "YANAOCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "CANCHIS",
+        "districts": [
+          {
+            "name": "CHECACUPE",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "COMBAPATA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MARANGANI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PITUMARCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN PABLO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN PEDRO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SICUANI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TINTA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "CHUMBIVILCAS",
+        "districts": [
+          {
+            "name": "CAPACMARCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "CHAMACA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "COLQUEMARCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "LIVITACA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "LLUSCO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "QUINOTA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "QUIÑOTA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "SANTO TOMAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "VELILLE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CUATRO DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "CUSCO",
+        "districts": [
+          {
+            "name": "CCORCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CUSCO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "POROY",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN JERONIMO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN SEBASTIAN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANTIAGO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAYLLA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "WANCHAQ",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "ESPINAR",
+        "districts": [
+          {
+            "name": "ALTO PICHIGUA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CONDOROMA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "COPORAQUE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ESPINAR",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "OCORURO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PALLPATA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PICHIGUA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SUYCKUTAMBO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "LA CONVENCION",
+        "districts": [
+          {
+            "name": "CIELO PUNCO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ECHARATE",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUAYOPATA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "INKAWASI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "KIMBIRI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "KUMPIRUSHIATO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MANITEA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MARANURA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MEGANTONI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "OCOBAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PICHARI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "QUELLOUNO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANTA ANA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANTA TERESA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "UNION ASHANINKA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "VILCABAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "VILLA KINTIARINA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "VILLA VIRGEN",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "PARURO",
+        "districts": [
+          {
+            "name": "ACCHA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CCAPI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "COLCHA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUANOQUITE",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "OMACHA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PACCARITAMBO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PARURO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PILLPINTO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "YAURISQUE",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
@@ -4600,12 +5403,6 @@ const datos = [
       {
         "name": "PAUCARTAMBO",
         "districts": [
-          {
-            "name": "PAUCARTAMBO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "CAICAY",
             "zone": "2",
@@ -4631,7 +5428,19 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "KOSNIPATA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "KOSÑIPATA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PAUCARTAMBO",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
@@ -4639,58 +5448,76 @@ const datos = [
         ]
       },
       {
-        "name": "ANTA",
+        "name": "QUISPICANCHI",
         "districts": [
           {
-            "name": "ANTA",
+            "name": "ANDAHUAYLILLAS",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "ANCAHUASI",
+            "name": "CAMANTI",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "CACHIMAYO",
+            "name": "CCARHUAYO",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "CHINCHAYPUJIO",
+            "name": "CCATCA",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "HUAROCONDO",
+            "name": "CUSIPATA",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "LIMATAMBO",
+            "name": "HUARO",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "MOLLEPATA",
+            "name": "LUCRE",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "PUCYURA",
+            "name": "MARCAPATA",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "ZURITE",
+            "name": "OCONGATE",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "OROPESA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "QUIQUIJANA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "URCOS",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
@@ -4700,12 +5527,6 @@ const datos = [
       {
         "name": "QUISPICANCHIS",
         "districts": [
-          {
-            "name": "URCOS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "ANDAHUAYLILLAS",
             "zone": "2",
@@ -4765,62 +5586,9 @@ const datos = [
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "PARURO",
-        "districts": [
-          {
-            "name": "PARURO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "ACCHA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CCAPI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "COLCHA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUANOQUITE",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "OMACHA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PACCARITAMBO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PILLPINTO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "YAURISQUE",
+            "name": "URCOS",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
@@ -4828,384 +5596,48 @@ const datos = [
         ]
       },
       {
-        "name": "CANCHIS",
+        "name": "URUBAMBA",
         "districts": [
           {
-            "name": "SICUANI",
+            "name": "CHINCHERO",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "CHECACUPE",
+            "name": "HUAYLLABAMBA",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "COMBAPATA",
+            "name": "MACHUPICCHU",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "MARANGANI",
+            "name": "MARAS",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "PITUMARCA",
+            "name": "OLLANTAYTAMBO",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "SAN PABLO",
+            "name": "URUBAMBA",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "SAN PEDRO",
+            "name": "YUCAY",
             "zone": "2",
             "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "TINTA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "CANAS",
-        "districts": [
-          {
-            "name": "YANAOCA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHECCA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "KUNTURKANKI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LANGUI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LAYO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PAMPAMARCA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "QUEHUE",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "TUPAC AMARU",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "ACOMAYO",
-        "districts": [
-          {
-            "name": "ACOMAYO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "ACOPIA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "ACOS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MOSOC LLACTA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "UN DISTRITO"
-          },
-          {
-            "name": "POMACANCHI",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "RONDOCAN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SANGARARA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "CUSCO",
-        "districts": [
-          {
-            "name": "CUSCO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CCORCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "POROY",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAN JERONIMO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAN SEBASTIAN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SANTIAGO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAYLLA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "WANCHAQ",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "LA CONVENCION",
-        "districts": [
-          {
-            "name": "SANTA ANA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "ECHARATE",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUAYOPATA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MARANURA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "OCOBAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "QUELLOUNO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "KIMBIRI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PICHARI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "VILLA VIRGEN",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "VILLA KINTIARINA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MEGANTONI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "CHUMBIVILCAS",
-        "districts": [
-          {
-            "name": "CAPACMARCA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "CHAMACA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "COLQUEMARCA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "LIVITACA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "SANTO TOMAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "LLUSCO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "QUIÑOTA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "VELILLE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CUATRO DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "ESPINAR",
-        "districts": [
-          {
-            "name": "ESPINAR",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CONDOROMA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "COPORAQUE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "OCORURO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PALLPATA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PICHIGUA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SUYCKUTAMBO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "ALTO PICHIGUA",
-            "zone": "3",
-            "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           }
         ]
@@ -5215,6 +5647,225 @@ const datos = [
   {
     "name": "HUANCAVELICA",
     "provinces": [
+      {
+        "name": "ACOBAMBA",
+        "districts": [
+          {
+            "name": "ACOBAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ANDABAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ANTA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CAJA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MARCAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PAUCARA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "POMACOCHA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ROSARIO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "ANGARAES",
+        "districts": [
+          {
+            "name": "ANCHONGA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "CALLANMARCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "CCOCHACCASA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "CHINCHO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "UN DISTRITO"
+          },
+          {
+            "name": "CONGALLA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "HUANCA HUANCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "HUANCA-HUANCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "UN DISTRITO"
+          },
+          {
+            "name": "HUAYLLAY GRANDE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "JULCAMARCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "LIRCAY",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "SAN ANTONIO DE ANTAPARCO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "SANTO TOMAS DE PATA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "SECCLLA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "CASTROVIRREYNA",
+        "districts": [
+          {
+            "name": "ARMA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "AURAHUA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "CAPILLAS",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "CASTROVIRREYNA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "CHUPAMARCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "COCAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "HUACHOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "HUAMATAMBO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "MOLLEPAMPA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "SAN JUAN",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "SANTA ANA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "TANTARA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "TICRAPO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          }
+        ]
+      },
       {
         "name": "CHURCAMPA",
         "districts": [
@@ -5287,261 +5938,6 @@ const datos = [
         ]
       },
       {
-        "name": "ACOBAMBA",
-        "districts": [
-          {
-            "name": "ACOBAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "ANDABAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "ANTA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CAJA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MARCAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PAUCARA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "POMACOCHA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "ROSARIO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "TAYACAJA",
-        "districts": [
-          {
-            "name": "COLCABAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "DANIEL HERNANDEZ",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "HUACHOCOLPA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "HUARIBAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "QUISHUAR",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "SALCABAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "SAN MARCOS DE ROCCHAC",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "SALCAHUASI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "SURCUBAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "TINTAY PUNCU",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "PICHOS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "ROBLE",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "ACOSTAMBO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "ACRAQUIA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "AHUAYCHA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "HUANDO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "ÑAHUIMPUQUIO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "PAMPAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "PAZOS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "SANTIAGO DE TUCUMA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "OCHO DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "ANGARAES",
-        "districts": [
-          {
-            "name": "CHINCHO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "UN DISTRITO"
-          },
-          {
-            "name": "ANCHONGA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "CALLANMARCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "CCOCHACCASA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "CONGALLA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "HUANCA HUANCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "HUAYLLAY GRANDE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "JULCAMARCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "LIRCAY",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "SAN ANTONIO DE ANTAPARCO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "SECCLLA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "SANTO TOMAS DE PATA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          }
-        ]
-      },
-      {
         "name": "HUANCAVELICA",
         "districts": [
           {
@@ -5582,6 +5978,12 @@ const datos = [
           },
           {
             "name": "HUANCAVELICA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUANDO",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
@@ -5655,109 +6057,8 @@ const datos = [
         ]
       },
       {
-        "name": "CASTROVIRREYNA",
-        "districts": [
-          {
-            "name": "ARMA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "AURAHUA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "CASTROVIRREYNA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "CHUPAMARCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "COCAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "HUACHOS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "HUAMATAMBO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "MOLLEPAMPA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "SANTA ANA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "TANTARA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "TICRAPO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "CAPILLAS",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "DOS DISTRITOS"
-          },
-          {
-            "name": "SAN JUAN",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "DOS DISTRITOS"
-          }
-        ]
-      },
-      {
         "name": "HUAYTARA",
         "districts": [
-          {
-            "name": "SAN ANTONIO DE CUSICANCHA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "PILPICHACA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "QUERCO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TRES DISTRITOS"
-          },
           {
             "name": "AYAVI",
             "zone": "4",
@@ -5795,10 +6096,34 @@ const datos = [
             "ambito": "TRECE DISTRITOS"
           },
           {
+            "name": "PILPICHACA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "QUERCO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
             "name": "QUITO ARMA",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TRECE DISTRITOS"
+          },
+          {
+            "name": "QUITO-ARMA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "SAN ANTONIO DE CUSICANCHA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
           },
           {
             "name": "SAN FRANCISCO DE SANGAYAICO",
@@ -5837,323 +6162,167 @@ const datos = [
             "ambito": "TRECE DISTRITOS"
           }
         ]
+      },
+      {
+        "name": "TAYACAJA",
+        "districts": [
+          {
+            "name": "ACOSTAMBO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "ACRAQUIA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "AHUAYCHA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "ANDAYMARCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "COCHABAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "COLCABAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "DANIEL HERNANDEZ",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "HUACHOCOLPA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "HUANDO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "HUARIBAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "LAMBRAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "NAHUIMPUQUIO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "PAMPAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "PAZOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "PICHOS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "QUICHUAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "QUISHUAR",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "ROBLE",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "SALCABAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "SALCAHUASI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "SAN MARCOS DE ROCCHAC",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "SANTIAGO DE TUCUMA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "SURCUBAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "TINTAY PUNCU",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "ÑAHUIMPUQUIO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "OCHO DISTRITOS"
+          }
+        ]
       }
     ]
   },
   {
     "name": "HUANUCO",
     "provinces": [
-      {
-        "name": "HUANUCO",
-        "districts": [
-          {
-            "name": "PILLCO MARCA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUANUCO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "YACUS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "AMARILIS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHINCHAO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHURUBAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MARGOS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "QUISQUI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAN FRANCISCO DE CAYRAN",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAN PEDRO DE CHAULAN",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SANTA MARIA DEL VALLE",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "YARUMAYO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "HUACAYBAMBA",
-        "districts": [
-          {
-            "name": "HUACAYBAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CANCHABAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "COCHABAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PINRA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "LEONCIO PRADO",
-        "districts": [
-          {
-            "name": "PUCAYACU",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "VILLA FLORES",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "RUPA RUPA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CASTILLO GRANDE",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "DANIEL ALOMIA ROBLES",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HERMILIO VALDIZAN",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "JOSE CRESPO Y CASTILLO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LUYANDO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MARIANO DAMASO BERAUN",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "MARAÑON",
-        "districts": [
-          {
-            "name": "LA MORADA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUACRACHUCO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHOLON",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAN BUENAVENTURA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "PUERTO INCA",
-        "districts": [
-          {
-            "name": "PUERTO INCA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CODO DEL POZUZO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HONORIA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "TOURNAVISTA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "YUYAPICHIS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "YAROWILCA",
-        "districts": [
-          {
-            "name": "CHAVINILLO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CAHUAC",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHACABAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "APARICIO POMARES",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "JACAS CHICO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "OBAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PAMPAMARCA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHORAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "PACHITEA",
-        "districts": [
-          {
-            "name": "PANAO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHAGLLA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MOLINO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "UMARI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
       {
         "name": "AMBO",
         "districts": [
@@ -6208,6 +6377,94 @@ const datos = [
         ]
       },
       {
+        "name": "DOS DE MAYO",
+        "districts": [
+          {
+            "name": "CHUQUIS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "LA UNION",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "MARIAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "PACHAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "QUIVILLA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "RIPAN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "SHUNQUI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "SILLAPATA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "YANAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "HUACAYBAMBA",
+        "districts": [
+          {
+            "name": "CANCHABAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "COCHABAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUACAYBAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PINRA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
         "name": "HUAMALIES",
         "districts": [
           {
@@ -6235,30 +6492,6 @@ const datos = [
             "ambito": "OCHO DISTRITOS"
           },
           {
-            "name": "MONZON",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "PUNCHAO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "SINGA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "TANTAMAYO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
             "name": "LLATA",
             "zone": "2",
             "zFactor": "0.25",
@@ -6271,69 +6504,129 @@ const datos = [
             "ambito": "TRES DISTRITOS"
           },
           {
+            "name": "MONZON",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "PUNCHAO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "PUNOS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
             "name": "PUÑOS",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "SINGA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "TANTAMAYO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "OCHO DISTRITOS"
           }
         ]
       },
       {
-        "name": "DOS DE MAYO",
+        "name": "HUANUCO",
         "districts": [
           {
-            "name": "LA UNION",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "PACHAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "RIPAN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "SHUNQUI",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "SILLAPATA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "YANAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "QUIVILLA",
+            "name": "AMARILIS",
             "zone": "2",
             "zFactor": "0.25",
-            "ambito": "TRES DISTRITOS"
+            "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "MARIAS",
+            "name": "CHINCHAO",
             "zone": "2",
             "zFactor": "0.25",
-            "ambito": "TRES DISTRITOS"
+            "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "CHUQUIS",
+            "name": "CHURUBAMBA",
             "zone": "2",
             "zFactor": "0.25",
-            "ambito": "TRES DISTRITOS"
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUANUCO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MARGOS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PILLCO MARCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "QUISQUI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "QUISQUI (KICHKI)",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN FRANCISCO DE CAYRAN",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN PABLO DE PILLAO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN PEDRO DE CHAULAN",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANTA MARIA DEL VALLE",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "YACUS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "YARUMAYO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
           }
         ]
       },
@@ -6341,19 +6634,19 @@ const datos = [
         "name": "LAURICOCHA",
         "districts": [
           {
-            "name": "SAN MIGUEL DE CAURI",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "JESUS",
+            "name": "BANOS",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
             "name": "BAÑOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "JESUS",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
@@ -6381,6 +6674,270 @@ const datos = [
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN MIGUEL DE CAURI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "LEONCIO PRADO",
+        "districts": [
+          {
+            "name": "CASTILLO GRANDE",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "DANIEL ALOMIA ROBLES",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HERMILIO VALDIZAN",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "JOSE CRESPO Y CASTILLO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LUYANDO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MARIANO DAMASO BERAUN",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PUCAYACU",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PUEBLO NUEVO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "RUPA RUPA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "RUPA-RUPA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANTO DOMINGO DE ANDA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "VILLA FLORES",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "MARANON",
+        "districts": [
+          {
+            "name": "CHOLON",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUACRACHUCO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LA MORADA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN BUENAVENTURA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANTA ROSA DE ALTO YANAJANCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "MARAÑON",
+        "districts": [
+          {
+            "name": "CHOLON",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUACRACHUCO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LA MORADA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN BUENAVENTURA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "PACHITEA",
+        "districts": [
+          {
+            "name": "CHAGLLA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MOLINO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PANAO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "UMARI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "PUERTO INCA",
+        "districts": [
+          {
+            "name": "CODO DEL POZUZO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HONORIA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PUERTO INCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TOURNAVISTA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "YUYAPICHIS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "YAROWILCA",
+        "districts": [
+          {
+            "name": "APARICIO POMARES",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CAHUAC",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHACABAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHAVINILLO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHORAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "JACAS CHICO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "OBAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PAMPAMARCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
           }
         ]
       }
@@ -6392,12 +6949,6 @@ const datos = [
       {
         "name": "CHINCHA",
         "districts": [
-          {
-            "name": "SAN PEDRO DE HUACARPANA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "UN DISTRITO"
-          },
           {
             "name": "ALTO LARAN",
             "zone": "4",
@@ -6447,6 +6998,12 @@ const datos = [
             "ambito": "DIEZ DISTRITOS"
           },
           {
+            "name": "SAN PEDRO DE HUACARPANA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "UN DISTRITO"
+          },
+          {
             "name": "SUNAMPE",
             "zone": "4",
             "zFactor": "0.45",
@@ -6461,45 +7018,16 @@ const datos = [
         ]
       },
       {
-        "name": "PALPA",
-        "districts": [
-          {
-            "name": "LLIPATA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PALPA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "RIO GRANDE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SANTA CRUZ",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "TIBILLO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
         "name": "ICA",
         "districts": [
           {
             "name": "ICA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LA TINGUINA",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
@@ -6585,6 +7113,41 @@ const datos = [
         ]
       },
       {
+        "name": "NASCA",
+        "districts": [
+          {
+            "name": "CHANGUILLO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "UN DISTRITO"
+          },
+          {
+            "name": "EL INGENIO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "UN DISTRITO"
+          },
+          {
+            "name": "MARCONA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "UN DISTRITO"
+          },
+          {
+            "name": "NASCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "UN DISTRITO"
+          },
+          {
+            "name": "VISTA ALEGRE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "UN DISTRITO"
+          }
+        ]
+      },
+      {
         "name": "NAZCA",
         "districts": [
           {
@@ -6613,6 +7176,41 @@ const datos = [
           },
           {
             "name": "VISTA ALEGRE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "PALPA",
+        "districts": [
+          {
+            "name": "LLIPATA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PALPA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "RIO GRANDE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANTA CRUZ",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TIBILLO",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
@@ -6719,114 +7317,67 @@ const datos = [
         ]
       },
       {
-        "name": "SATIPO",
+        "name": "CHUPACA",
         "districts": [
           {
-            "name": "SATIPO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "COVIRIALI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LLAYLLA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MAZAMARI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PAMPA HERMOSA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PANGOA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "RIO NEGRO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "RIO TAMBO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "TARMA",
-        "districts": [
-          {
-            "name": "ACOBAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "HUASAHUASI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "PALCA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "PALCAMAYO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "SAN PEDRO DE CAJAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "TAPO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "TARMA",
+            "name": "AHUAC",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "TRES DISTRITOS"
+            "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "LA UNION",
+            "name": "CHONGOS BAJO",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "TRES DISTRITOS"
+            "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "HUARICOLCA",
+            "name": "CHUPACA",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "TRES DISTRITOS"
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUACHAC",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUAMANCACA CHICO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN JUAN DE ISCOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN JUAN DE JARPA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN JUAN DE YSCOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TRES DE DICIEMBRE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "YANACANCHA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
           }
         ]
       },
@@ -6834,19 +7385,37 @@ const datos = [
         "name": "CONCEPCION",
         "districts": [
           {
-            "name": "CONCEPCION",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "ONCE DISTRITOS"
-          },
-          {
             "name": "ACO",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "ONCE DISTRITOS"
           },
           {
+            "name": "ANDAMARCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
             "name": "CHAMBARA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "COCHAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "COMAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "CONCEPCION",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "ONCE DISTRITOS"
@@ -6862,6 +7431,12 @@ const datos = [
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "ONCE DISTRITOS"
+          },
+          {
+            "name": "MARISCAL CASTILLA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CUATRO DISTRITOS"
           },
           {
             "name": "MATAHUASI",
@@ -6898,107 +7473,12 @@ const datos = [
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "ONCE DISTRITOS"
-          },
-          {
-            "name": "ANDAMARCA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "COCHAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "COMAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "MARISCAL CASTILLA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CUATRO DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "CHUPACA",
-        "districts": [
-          {
-            "name": "CHUPACA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "AHUAC",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHONGOS BAJO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUACHAC",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUAMANCACA CHICO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAN JUAN DE YSCOS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAN JUAN DE JARPA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "TRES DE DICIEMBRE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "YANACANCHA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
           }
         ]
       },
       {
         "name": "HUANCAYO",
         "districts": [
-          {
-            "name": "PARIAHUANCA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOS DISTRITOS"
-          },
-          {
-            "name": "SANTO DOMINGO DE ACOBAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOS DISTRITOS"
-          },
           {
             "name": "CARHUACALLANGA",
             "zone": "3",
@@ -7096,6 +7576,12 @@ const datos = [
             "ambito": "VEINTISEIS DISTRITOS"
           },
           {
+            "name": "PARIAHUANCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
             "name": "PILCOMAYO",
             "zone": "3",
             "zFactor": "0.35",
@@ -7132,13 +7618,25 @@ const datos = [
             "ambito": "VEINTISEIS DISTRITOS"
           },
           {
-            "name": "SAÑO",
+            "name": "SANO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "SANTO DOMINGO DE ACOBAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "SAPALLANGA",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "VEINTISEIS DISTRITOS"
           },
           {
-            "name": "SAPALLANGA",
+            "name": "SAÑO",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "VEINTISEIS DISTRITOS"
@@ -7161,16 +7659,16 @@ const datos = [
         "name": "JAUJA",
         "districts": [
           {
-            "name": "JAUJA",
+            "name": "ACOLLA",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TREINTA DISTRITOS"
           },
           {
-            "name": "ACOLLA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TREINTA DISTRITOS"
+            "name": "APATA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CUATRO DISTRITOS"
           },
           {
             "name": "ATAURA",
@@ -7221,7 +7719,19 @@ const datos = [
             "ambito": "TREINTA DISTRITOS"
           },
           {
+            "name": "JAUJA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TREINTA DISTRITOS"
+          },
+          {
             "name": "JULCAN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TREINTA DISTRITOS"
+          },
+          {
+            "name": "LEONOR ORDONEZ",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TREINTA DISTRITOS"
@@ -7255,6 +7765,18 @@ const datos = [
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TREINTA DISTRITOS"
+          },
+          {
+            "name": "MOLINOS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "MONOBAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CUATRO DISTRITOS"
           },
           {
             "name": "MUQUI",
@@ -7299,6 +7821,12 @@ const datos = [
             "ambito": "TREINTA DISTRITOS"
           },
           {
+            "name": "RICRAN",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
             "name": "SAN LORENZO",
             "zone": "3",
             "zFactor": "0.35",
@@ -7339,30 +7867,6 @@ const datos = [
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TREINTA DISTRITOS"
-          },
-          {
-            "name": "APATA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "MOLINOS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "MONOBAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "RICRAN",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CUATRO DISTRITOS"
           }
         ]
       },
@@ -7371,12 +7875,6 @@ const datos = [
         "districts": [
           {
             "name": "CARHUAMAYO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOS DISTRITOS"
-          },
-          {
-            "name": "ULCUMAYO",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "DOS DISTRITOS"
@@ -7392,6 +7890,130 @@ const datos = [
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "ULCUMAYO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "SATIPO",
+        "districts": [
+          {
+            "name": "COVIRIALI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LLAYLLA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MAZAMARI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PAMPA HERMOSA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PANGOA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "RIO NEGRO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "RIO TAMBO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SATIPO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "VIZCATAN DEL ENE",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "TARMA",
+        "districts": [
+          {
+            "name": "ACOBAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "HUARICOLCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "HUASAHUASI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "LA UNION",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "PALCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "PALCAMAYO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "SAN PEDRO DE CAJAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "TAPO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "TARMA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TRES DISTRITOS"
           }
         ]
       },
@@ -7466,16 +8088,69 @@ const datos = [
     "name": "LA LIBERTAD",
     "provinces": [
       {
+        "name": "ASCOPE",
+        "districts": [
+          {
+            "name": "ASCOPE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CASA GRANDE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHICAMA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHOCOPE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MAGDALENA DE CAO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PAIJAN",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "RAZURI",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANTIAGO DE CAO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
         "name": "BOLIVAR",
         "districts": [
           {
-            "name": "BOLIVAR",
+            "name": "BAMBAMARCA",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "BAMBAMARCA",
+            "name": "BOLIVAR",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
@@ -7507,14 +8182,189 @@ const datos = [
         ]
       },
       {
-        "name": "PATAZ",
+        "name": "CHEPEN",
         "districts": [
           {
-            "name": "TAYABAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
+            "name": "CHEPEN",
+            "zone": "4",
+            "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
           },
+          {
+            "name": "PACANGA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PUEBLO NUEVO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "GRAN CHIMU",
+        "districts": [
+          {
+            "name": "CASCAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LUCMA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MARMOT",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAYAPULLO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "JULCAN",
+        "districts": [
+          {
+            "name": "CALAMARCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CARABAMBA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUASO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "JULCAN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "OTUZCO",
+        "districts": [
+          {
+            "name": "AGALLPAMPA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CHARAT",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUARANCHAL",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LA CUESTA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MACHE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "OTUZCO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PARANDAY",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SALPO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SINSICAP",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "USQUIL",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "PACASMAYO",
+        "districts": [
+          {
+            "name": "GUADALUPE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "JEQUETEPEQUE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PACASMAYO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN JOSE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN PEDRO DE LLOC",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "PATAZ",
+        "districts": [
           {
             "name": "BULDIBUYO",
             "zone": "2",
@@ -7582,6 +8432,12 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "TAYABAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "URPAY",
             "zone": "2",
             "zFactor": "0.25",
@@ -7593,31 +8449,25 @@ const datos = [
         "name": "SANCHEZ CARRION",
         "districts": [
           {
-            "name": "COCHORCO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOS DISTRITOS"
-          },
-          {
-            "name": "SARTIMBAMBA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DOS DISTRITOS"
-          },
-          {
-            "name": "HUAMACHUCO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
             "name": "CHUGAY",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "SEIS DISTRITOS"
           },
           {
+            "name": "COCHORCO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
             "name": "CURGOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "HUAMACHUCO",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "SEIS DISTRITOS"
@@ -7639,18 +8489,18 @@ const datos = [
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "SARTIMBAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DOS DISTRITOS"
           }
         ]
       },
       {
         "name": "SANTIAGO DE CHUCO",
         "districts": [
-          {
-            "name": "SANTIAGO DE CHUCO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "ANGASMARCA",
             "zone": "3",
@@ -7688,6 +8538,12 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "SANTIAGO DE CHUCO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "SITABAMBA",
             "zone": "3",
             "zFactor": "0.35",
@@ -7696,244 +8552,10 @@ const datos = [
         ]
       },
       {
-        "name": "GRAN CHIMU",
-        "districts": [
-          {
-            "name": "CASCAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LUCMA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MARMOT",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAYAPULLO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "JULCAN",
-        "districts": [
-          {
-            "name": "JULCAN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CALAMARCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CARABAMBA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUASO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "OTUZCO",
-        "districts": [
-          {
-            "name": "OTUZCO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "AGALLPAMPA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHARAT",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUARANCHAL",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LA CUESTA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MACHE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PARANDAY",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SALPO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SINSICAP",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "USQUIL",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "CHEPEN",
-        "districts": [
-          {
-            "name": "CHEPEN",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PACANGA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PUEBLO NUEVO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "ASCOPE",
-        "districts": [
-          {
-            "name": "ASCOPE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHICAMA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHOCOPE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MAGDALENA DE CAO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PAIJAN",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "RAZURI",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SANTIAGO DE CAO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CASA GRANDE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "PACASMAYO",
-        "districts": [
-          {
-            "name": "SAN PEDRO DE LLOC",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "GUADALUPE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "JEQUETEPEQUE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PACASMAYO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAN JOSE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
         "name": "TRUJILLO",
         "districts": [
           {
-            "name": "TRUJILLO",
+            "name": "ALTO TRUJILLO",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
@@ -7993,6 +8615,12 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "TRUJILLO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "VICTOR LARCO HERRERA",
             "zone": "4",
             "zFactor": "0.45",
@@ -8004,12 +8632,6 @@ const datos = [
         "name": "VIRU",
         "districts": [
           {
-            "name": "VIRU",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
             "name": "CHAO",
             "zone": "4",
             "zFactor": "0.45",
@@ -8017,6 +8639,12 @@ const datos = [
           },
           {
             "name": "GUADALUPITO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "VIRU",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
@@ -8029,126 +8657,14 @@ const datos = [
     "name": "LAMBAYEQUE",
     "provinces": [
       {
-        "name": "FERREÑAFE",
-        "districts": [
-          {
-            "name": "CAÑARIS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOS DISTRITOS"
-          },
-          {
-            "name": "INCAHUASI",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOS DISTRITOS"
-          },
-          {
-            "name": "FERREÑAFE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "MANUEL ANTONIO MESONES MURO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "PITIPO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "PUEBLO NUEVO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "CUATRO DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "LAMBAYEQUE",
-        "districts": [
-          {
-            "name": "SALAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "UN DISTRITO"
-          },
-          {
-            "name": "LAMBAYEQUE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CHOCHOPE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "ILLIMO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "JAYANCA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MOCHUMI",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MORROPE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MOTUPE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "OLMOS",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PACORA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAN JOSE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "TUCUME",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
         "name": "CHICLAYO",
         "districts": [
+          {
+            "name": "CAYALTI",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
           {
             "name": "CHICLAYO",
             "zone": "4",
@@ -8210,6 +8726,12 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "PATAPO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "PICSI",
             "zone": "4",
             "zFactor": "0.45",
@@ -8217,36 +8739,6 @@ const datos = [
           },
           {
             "name": "PIMENTEL",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "REQUE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SANTA ROSA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAÑA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CAYALTI",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PATAPO",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
@@ -8264,7 +8756,190 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "REQUE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANTA ROSA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAÑA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "TUMAN",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "FERRENAFE",
+        "districts": [
+          {
+            "name": "CANARIS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "FERRENAFE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "INCAHUASI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "MANUEL ANTONIO MESONES MURO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "PITIPO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "PUEBLO NUEVO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "FERREÑAFE",
+        "districts": [
+          {
+            "name": "CAÑARIS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "FERREÑAFE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "INCAHUASI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "MANUEL ANTONIO MESONES MURO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "PITIPO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "PUEBLO NUEVO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "CUATRO DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "LAMBAYEQUE",
+        "districts": [
+          {
+            "name": "CHOCHOPE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ILLIMO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "JAYANCA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LAMBAYEQUE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MOCHUMI",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MORROPE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MOTUPE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "OLMOS",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PACORA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SALAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "UN DISTRITO"
+          },
+          {
+            "name": "SAN JOSE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TUCUME",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
@@ -8276,6 +8951,41 @@ const datos = [
   {
     "name": "LIMA",
     "provinces": [
+      {
+        "name": "BARRANCA",
+        "districts": [
+          {
+            "name": "BARRANCA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PARAMONGA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PATIVILCA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SUPE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SUPE PUERTO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
       {
         "name": "CAJATAMBO",
         "districts": [
@@ -8312,443 +9022,103 @@ const datos = [
         ]
       },
       {
-        "name": "OYON",
+        "name": "CANETE",
         "districts": [
           {
-            "name": "OYON",
+            "name": "ASIA",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "ANDAJES",
+            "name": "CALANGO",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "CAUJUL",
+            "name": "CERRO AZUL",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "COCHAMARCA",
+            "name": "CHILCA",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "NAVAN",
+            "name": "COAYLLO",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "PACHANGARA",
+            "name": "IMPERIAL",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "YAUYOS",
-        "districts": [
+          },
           {
-            "name": "YAUYOS",
+            "name": "LUNAHUANA",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
+            "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "ALIS",
+            "name": "MALA",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
+            "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "AYAUCA",
+            "name": "NUEVO IMPERIAL",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
+            "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "AYAVIRI",
+            "name": "PACARAN",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
+            "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "AZANGARO",
+            "name": "QUILMANA",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
+            "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "CACRA",
+            "name": "SAN ANTONIO",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
+            "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "CARANIA",
+            "name": "SAN LUIS",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
+            "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "CATAHUASI",
+            "name": "SAN VICENTE DE CANETE",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
+            "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "CHOCOS",
+            "name": "SANTA CRUZ DE FLORES",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
+            "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "COCHAS",
+            "name": "ZUNIGA",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "COLONIA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "HONGOS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "HUAMPARA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "HUANCAYA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "HUANGASCAR",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "HUANTAN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "HUAÑEC",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "LARAOS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "LINCHA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "MADEAN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "MIRAFLORES",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "PUTINZA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "QUINCHES",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "SAN JOAQUIN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "SAN PEDRO DE PILAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "TANTA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "TOMAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "TUPE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "VIÑAC",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "VITIS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTINUEVE DISTRITOS"
-          },
-          {
-            "name": "OMAS",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "QUINOCAY",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "TAURIPAMPA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TRES DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "HUAROCHIRI",
-        "districts": [
-          {
-            "name": "MATUCANA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "CALLAHUANCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "CARAMPOMA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "CHICLA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "HUACHUPAMPA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "HUANZA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "HUAROCHIRI",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "LAHUAYTAMBO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "LANGA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "LARAOS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "SAN ANDRES DE TUPICOCHA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "SAN BARTOLOME",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "SAN DAMIAN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "SAN JUAN DE IRIS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "SAN JUAN DE TANTARANCHE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "SAN LORENZO DE QUINTI",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "SAN MATEO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "SAN MATEO DE OTAO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "SAN PEDRO DE CASTA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "SAN PEDRO DE HUANCAYRE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "SANGALLAYA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "SANTA CRUZ DE COCACHACRA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "SANTIAGO DE ANCHUCAYA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "SANTIAGO DE TUNA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "SURCO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "VEINTICINCO DISTRITOS"
-          },
-          {
-            "name": "ANTIOQUIA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "CUENCA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "MARIATANA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "RICARDO PALMA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "SAN ANTONIO DE CHACLLA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "SANTA EULALIA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "SANTO DOMINGO DE LOS OLLEROS",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "SIETE DISTRITOS"
+            "ambito": "TODOS LOS DISTRITOS"
           }
         ]
       },
@@ -8756,10 +9126,22 @@ const datos = [
         "name": "CANTA",
         "districts": [
           {
+            "name": "ARAHUAY",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
             "name": "CANTA",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "HUAMANTANGA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TRES DISTRITOS"
           },
           {
             "name": "HUAROS",
@@ -8780,18 +9162,6 @@ const datos = [
             "ambito": "CUATRO DISTRITOS"
           },
           {
-            "name": "ARAHUAY",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "HUAMANTANGA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
             "name": "SANTA ROSA DE QUIVES",
             "zone": "4",
             "zFactor": "0.45",
@@ -8800,168 +9170,8 @@ const datos = [
         ]
       },
       {
-        "name": "HUARAL",
-        "districts": [
-          {
-            "name": "HUARAL",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "AUCALLAMA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "CHANCAY",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "ATAVILLOS ALTO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "NUEVE DISTRITOS"
-          },
-          {
-            "name": "ATAVILLOS BAJO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "NUEVE DISTRITOS"
-          },
-          {
-            "name": "IHUARI",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "NUEVE DISTRITOS"
-          },
-          {
-            "name": "LAMPIAN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "NUEVE DISTRITOS"
-          },
-          {
-            "name": "PACARAOS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "NUEVE DISTRITOS"
-          },
-          {
-            "name": "SAN MIGUEL DE ACOS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "NUEVE DISTRITOS"
-          },
-          {
-            "name": "SANTA CRUZ DE ANDAMARCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "NUEVE DISTRITOS"
-          },
-          {
-            "name": "SUMBILCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "NUEVE DISTRITOS"
-          },
-          {
-            "name": "VEINTISIETE DE NOVIEMBRE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "NUEVE DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "HUAURA",
-        "districts": [
-          {
-            "name": "CHECRAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "LEONCIO PRADO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "PACCHO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "SANTA LEONOR",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "HUACHO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "AMBAR",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "CALETA DE CARQUIN",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "HUALMAY",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "HUAURA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "SANTA MARIA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "SAYAN",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "VEGUETA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "OCHO DISTRITOS"
-          }
-        ]
-      },
-      {
         "name": "CAÑETE",
         "districts": [
-          {
-            "name": "SAN VICENTE DE CAÑETE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "QUINCE DISTRITOS"
-          },
           {
             "name": "ASIA",
             "zone": "4",
@@ -9041,6 +9251,12 @@ const datos = [
             "ambito": "QUINCE DISTRITOS"
           },
           {
+            "name": "SAN VICENTE DE CAÑETE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "QUINCE DISTRITOS"
+          },
+          {
             "name": "SANTA CRUZ DE FLORES",
             "zone": "4",
             "zFactor": "0.45",
@@ -9055,49 +9271,365 @@ const datos = [
         ]
       },
       {
-        "name": "BARRANCA",
+        "name": "HUARAL",
         "districts": [
           {
-            "name": "BARRANCA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
+            "name": "ATAVILLOS ALTO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "NUEVE DISTRITOS"
           },
           {
-            "name": "PARAMONGA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
+            "name": "ATAVILLOS BAJO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "NUEVE DISTRITOS"
           },
           {
-            "name": "PATIVILCA",
+            "name": "AUCALLAMA",
             "zone": "4",
             "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
+            "ambito": "TRES DISTRITOS"
           },
           {
-            "name": "SUPE",
+            "name": "CHANCAY",
             "zone": "4",
             "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
+            "ambito": "TRES DISTRITOS"
           },
           {
-            "name": "SUPE PUERTO",
+            "name": "HUARAL",
             "zone": "4",
             "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "IHUARI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "NUEVE DISTRITOS"
+          },
+          {
+            "name": "LAMPIAN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "NUEVE DISTRITOS"
+          },
+          {
+            "name": "PACARAOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "NUEVE DISTRITOS"
+          },
+          {
+            "name": "SAN MIGUEL DE ACOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "NUEVE DISTRITOS"
+          },
+          {
+            "name": "SANTA CRUZ DE ANDAMARCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "NUEVE DISTRITOS"
+          },
+          {
+            "name": "SUMBILCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "NUEVE DISTRITOS"
+          },
+          {
+            "name": "VEINTISIETE DE NOVIEMBRE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "NUEVE DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "HUAROCHIRI",
+        "districts": [
+          {
+            "name": "ANTIOQUIA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "CALLAHUANCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "CARAMPOMA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "CHICLA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "CUENCA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "HUACHUPAMPA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "HUANZA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "HUAROCHIRI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "LAHUAYTAMBO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "LANGA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "LARAOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "MARIATANA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "MATUCANA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "RICARDO PALMA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "SAN ANDRES DE TUPICOCHA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "SAN ANTONIO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "SAN ANTONIO DE CHACLLA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "SAN BARTOLOME",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "SAN DAMIAN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "SAN JUAN DE IRIS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "SAN JUAN DE TANTARANCHE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "SAN LORENZO DE QUINTI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "SAN MATEO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "SAN MATEO DE OTAO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "SAN PEDRO DE CASTA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "SAN PEDRO DE HUANCAYRE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "SANGALLAYA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "SANTA CRUZ DE COCACHACRA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "SANTA EULALIA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "SANTIAGO DE ANCHUCAYA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "SANTIAGO DE TUNA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          },
+          {
+            "name": "SANTO DOMINGO DE LOS OLLEROS",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "SURCO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTICINCO DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "HUAURA",
+        "districts": [
+          {
+            "name": "AMBAR",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "CALETA DE CARQUIN",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "CHECRAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "HUACHO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "HUALMAY",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "HUAURA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "LEONCIO PRADO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "PACCHO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "SANTA LEONOR",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "SANTA MARIA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "SAYAN",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "VEGUETA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "OCHO DISTRITOS"
           }
         ]
       },
       {
         "name": "LIMA",
         "districts": [
-          {
-            "name": "LIMA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "ANCON",
             "zone": "4",
@@ -9112,6 +9644,12 @@ const datos = [
           },
           {
             "name": "BARRANCO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "BRENA",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
@@ -9178,6 +9716,12 @@ const datos = [
           },
           {
             "name": "LA VICTORIA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LIMA",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
@@ -9351,6 +9895,268 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           }
         ]
+      },
+      {
+        "name": "OYON",
+        "districts": [
+          {
+            "name": "ANDAJES",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CAUJUL",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "COCHAMARCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "NAVAN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "OYON",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PACHANGARA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "YAUYOS",
+        "districts": [
+          {
+            "name": "ALIS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "ALLAUCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "AYAUCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "AYAVIRI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "AZANGARO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "CACRA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "CARANIA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "CATAHUASI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "CHOCOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "COCHAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "COLONIA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "HONGOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "HUAMPARA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "HUANCAYA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "HUANEC",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "HUANGASCAR",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "HUANTAN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "HUAÑEC",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "LARAOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "LINCHA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "MADEAN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "MIRAFLORES",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "OMAS",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "PUTINZA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "QUINCHES",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "QUINOCAY",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "SAN JOAQUIN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "SAN PEDRO DE PILAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "TANTA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "TAURIPAMPA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "TOMAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "TUPE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "VINAC",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "VITIS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "VIÑAC",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          },
+          {
+            "name": "YAUYOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "VEINTINUEVE DISTRITOS"
+          }
+        ]
       }
     ]
   },
@@ -9358,14 +10164,172 @@ const datos = [
     "name": "LORETO",
     "provinces": [
       {
-        "name": "MARISCAL RAMON CASTILLA",
+        "name": "ALTO AMAZONAS",
         "districts": [
           {
-            "name": "RAMON CASTILLA",
+            "name": "BALSAPUERTO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "JEBEROS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "LAGUNAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "UN DISTRITO"
+          },
+          {
+            "name": "SANTA CRUZ",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "TENIENTE CESAR LOPEZ ROJAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "UN DISTRITO"
+          },
+          {
+            "name": "TNTE. CESAR LOPEZ ROJAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "YURIMAGUAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CINCO DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "DATEM DEL MARANON",
+        "districts": [
+          {
+            "name": "ANDOAS",
             "zone": "1",
             "zFactor": "0.10",
             "ambito": "TODOS LOS DISTRITOS"
           },
+          {
+            "name": "BARRANCA",
+            "zone": "1",
+            "zFactor": "0.10",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CAHUAPANAS",
+            "zone": "1",
+            "zFactor": "0.10",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MANSERICHE",
+            "zone": "1",
+            "zFactor": "0.10",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MORONA",
+            "zone": "1",
+            "zFactor": "0.10",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PASTAZA",
+            "zone": "1",
+            "zFactor": "0.10",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "DATEM DEL MARAÑON",
+        "districts": [
+          {
+            "name": "ANDOAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "BARRANCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "CAHUAPANAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOS DISTRITOS"
+          },
+          {
+            "name": "MANSERICHE",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "MORONA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "PASTAZA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CUATRO DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "LORETO",
+        "districts": [
+          {
+            "name": "NAUTA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PARINARI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TIGRE",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TROMPETEROS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "URARINAS",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "MARISCAL RAMON CASTILLA",
+        "districts": [
           {
             "name": "PEBAS",
             "zone": "1",
@@ -9373,7 +10337,19 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "RAMON CASTILLA",
+            "zone": "1",
+            "zFactor": "0.10",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "SAN PABLO",
+            "zone": "1",
+            "zFactor": "0.10",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANTA ROSA DE LORETO",
             "zone": "1",
             "zFactor": "0.10",
             "ambito": "TODOS LOS DISTRITOS"
@@ -9470,16 +10446,39 @@ const datos = [
         ]
       },
       {
+        "name": "PUTUMAYO",
+        "districts": [
+          {
+            "name": "PUTUMAYO",
+            "zone": "1",
+            "zFactor": "0.10",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ROSA PANDURO",
+            "zone": "1",
+            "zFactor": "0.10",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TENIENTE MANUEL CLAVERO",
+            "zone": "1",
+            "zFactor": "0.10",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "YAGUAS",
+            "zone": "1",
+            "zFactor": "0.10",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
         "name": "REQUENA",
         "districts": [
           {
-            "name": "SAQUENA",
-            "zone": "1",
-            "zFactor": "0.10",
-            "ambito": "UN DISTRITO"
-          },
-          {
-            "name": "REQUENA",
+            "name": "ALTO TAPICHE",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "DIEZ DISTRITOS"
@@ -9491,37 +10490,13 @@ const datos = [
             "ambito": "DIEZ DISTRITOS"
           },
           {
-            "name": "SOPLIN",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "TAPICHE",
+            "name": "EMILIO SAN MARTIN",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "DIEZ DISTRITOS"
           },
           {
             "name": "JENARO HERRERA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "YAQUERANA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "ALTO TAPICHE",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
-            "name": "EMILIO SAN MARTIN",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "DIEZ DISTRITOS"
@@ -9537,88 +10512,48 @@ const datos = [
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "DIEZ DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "LORETO",
-        "districts": [
-          {
-            "name": "NAUTA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "PARINARI",
+            "name": "REQUENA",
             "zone": "2",
             "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
+            "ambito": "DIEZ DISTRITOS"
           },
           {
-            "name": "TIGRE",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "TROMPETEROS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "URARINAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "ALTO AMAZONAS",
-        "districts": [
-          {
-            "name": "LAGUNAS",
-            "zone": "2",
-            "zFactor": "0.25",
+            "name": "SAQUENA",
+            "zone": "1",
+            "zFactor": "0.10",
             "ambito": "UN DISTRITO"
           },
           {
-            "name": "YURIMAGUAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CINCO DISTRITOS"
+            "name": "SOPLIN",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DIEZ DISTRITOS"
           },
           {
-            "name": "BALSAPUERTO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CINCO DISTRITOS"
+            "name": "TAPICHE",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DIEZ DISTRITOS"
           },
           {
-            "name": "JEBEROS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CINCO DISTRITOS"
-          },
-          {
-            "name": "SANTA CRUZ",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CINCO DISTRITOS"
-          },
-          {
-            "name": "TNTE. CESAR LOPEZ ROJAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CINCO DISTRITOS"
+            "name": "YAQUERANA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "DIEZ DISTRITOS"
           }
         ]
       },
       {
         "name": "UCAYALI",
         "districts": [
+          {
+            "name": "ALFREDO VARGAS GUERRA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
           {
             "name": "CONTAMANA",
             "zone": "2",
@@ -9650,7 +10585,7 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "ALFREDO VARGAS GUERRA",
+            "name": "VARGAS GUERRA",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
@@ -9662,82 +10597,12 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           }
         ]
-      },
-      {
-        "name": "DATEM DEL MARAÑON",
-        "districts": [
-          {
-            "name": "MANSERICHE",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "MORONA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "PASTAZA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "ANDOAS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "BARRANCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOS DISTRITOS"
-          },
-          {
-            "name": "CAHUAPANAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOS DISTRITOS"
-          }
-        ]
       }
     ]
   },
   {
     "name": "MADRE DE DIOS",
     "provinces": [
-      {
-        "name": "TAMBOPATA",
-        "districts": [
-          {
-            "name": "TAMBOPATA",
-            "zone": "1",
-            "zFactor": "0.10",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "INAMBARI",
-            "zone": "1",
-            "zFactor": "0.10",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LAS PIEDRAS",
-            "zone": "1",
-            "zFactor": "0.10",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LABERINTO",
-            "zone": "1",
-            "zFactor": "0.10",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
       {
         "name": "MANU",
         "districts": [
@@ -9771,13 +10636,19 @@ const datos = [
         "name": "TAHUAMANU",
         "districts": [
           {
-            "name": "IÑAPARI",
+            "name": "IBERIA",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "IBERIA",
+            "name": "INAPARI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "IÑAPARI",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
@@ -9786,6 +10657,35 @@ const datos = [
             "name": "TAHUAMANU",
             "zone": "2",
             "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "TAMBOPATA",
+        "districts": [
+          {
+            "name": "INAMBARI",
+            "zone": "1",
+            "zFactor": "0.10",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LABERINTO",
+            "zone": "1",
+            "zFactor": "0.10",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LAS PIEDRAS",
+            "zone": "1",
+            "zFactor": "0.10",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TAMBOPATA",
+            "zone": "1",
+            "zFactor": "0.10",
             "ambito": "TODOS LOS DISTRITOS"
           }
         ]
@@ -9799,18 +10699,6 @@ const datos = [
         "name": "GENERAL SANCHEZ CERRO",
         "districts": [
           {
-            "name": "LA CAPILLA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "UN DISTRITO"
-          },
-          {
-            "name": "OMATE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DIEZ DISTRITOS"
-          },
-          {
             "name": "CHOJATA",
             "zone": "3",
             "zFactor": "0.35",
@@ -9823,10 +10711,22 @@ const datos = [
             "ambito": "DIEZ DISTRITOS"
           },
           {
+            "name": "ICHUNA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "UN DISTRITO"
+          },
+          {
             "name": "ICHUÑA",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "LA CAPILLA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "UN DISTRITO"
           },
           {
             "name": "LLOQUE",
@@ -9836,6 +10736,12 @@ const datos = [
           },
           {
             "name": "MATALAQUE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "OMATE",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "DIEZ DISTRITOS"
@@ -9867,14 +10773,31 @@ const datos = [
         ]
       },
       {
-        "name": "MARISCAL NIETO",
+        "name": "ILO",
         "districts": [
           {
-            "name": "MOQUEGUA",
+            "name": "EL ALGARROBAL",
             "zone": "4",
             "zFactor": "0.45",
-            "ambito": "UN DISTRITO"
+            "ambito": "TODOS LOS DISTRITOS"
           },
+          {
+            "name": "ILO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PACOCHA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "MARISCAL NIETO",
+        "districts": [
           {
             "name": "CARUMAS",
             "zone": "3",
@@ -9888,10 +10811,22 @@ const datos = [
             "ambito": "CINCO DISTRITOS"
           },
           {
+            "name": "MOQUEGUA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "UN DISTRITO"
+          },
+          {
             "name": "SAMEGUA",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "SAN ANTONIO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "UN DISTRITO"
           },
           {
             "name": "SAN CRISTOBAL",
@@ -9906,29 +10841,6 @@ const datos = [
             "ambito": "CINCO DISTRITOS"
           }
         ]
-      },
-      {
-        "name": "ILO",
-        "districts": [
-          {
-            "name": "ILO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "EL ALGARROBAL",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PACOCHA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
       }
     ]
   },
@@ -9936,97 +10848,8 @@ const datos = [
     "name": "PASCO",
     "provinces": [
       {
-        "name": "PASCO",
-        "districts": [
-          {
-            "name": "HUACHON",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "HUARIACA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "NINACACA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "PALLANCHACRA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "PAUCARTAMBO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "SAN FRANCISCO DE ASIS DE YARUSYACAN",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "TICLACAYAN",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "YANACANCHA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "OCHO DISTRITOS"
-          },
-          {
-            "name": "CHAUPIMARCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CINCO DISTRITOS"
-          },
-          {
-            "name": "HUAYLLAY",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CINCO DISTRITOS"
-          },
-          {
-            "name": "SIMON BOLIVAR",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CINCO DISTRITOS"
-          },
-          {
-            "name": "TINYAHUARCO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CINCO DISTRITOS"
-          },
-          {
-            "name": "VICCO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "CINCO DISTRITOS"
-          }
-        ]
-      },
-      {
         "name": "DANIEL ALCIDES CARRION",
         "districts": [
-          {
-            "name": "YANAHUANCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "CHACAYAN",
             "zone": "3",
@@ -10068,6 +10891,12 @@ const datos = [
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "YANAHUANCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
           }
         ]
       },
@@ -10075,19 +10904,25 @@ const datos = [
         "name": "OXAPAMPA",
         "districts": [
           {
-            "name": "OXAPAMPA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
             "name": "CHONTABAMBA",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "CONSTITUCION",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "HUANCABAMBA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "OXAPAMPA",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
@@ -10117,6 +10952,89 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           }
         ]
+      },
+      {
+        "name": "PASCO",
+        "districts": [
+          {
+            "name": "CHAUPIMARCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "HUACHON",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "HUARIACA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "HUAYLLAY",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "NINACACA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "PALLANCHACRA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "PAUCARTAMBO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "SAN FRANCISCO DE ASIS DE YARUSYACAN",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "SIMON BOLIVAR",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "TICLACAYAN",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "OCHO DISTRITOS"
+          },
+          {
+            "name": "TINYAHUARCO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "VICCO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "CINCO DISTRITOS"
+          },
+          {
+            "name": "YANACANCHA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "OCHO DISTRITOS"
+          }
+        ]
       }
     ]
   },
@@ -10124,14 +11042,73 @@ const datos = [
     "name": "PIURA",
     "provinces": [
       {
-        "name": "HUANCABAMBA",
+        "name": "AYABACA",
         "districts": [
           {
-            "name": "HUANCABAMBA",
+            "name": "AYABACA",
             "zone": "3",
             "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
+            "ambito": "SEIS DISTRITOS"
           },
+          {
+            "name": "FRIAS",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "JILILI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "LAGUNAS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "MONTERO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "PACAIPAMPA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "PAIMAS",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "SAPILLICA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "SICCHEZ",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "SUYO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "CUATRO DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "HUANCABAMBA",
+        "districts": [
           {
             "name": "CANCHAQUE",
             "zone": "3",
@@ -10140,6 +11117,12 @@ const datos = [
           },
           {
             "name": "EL CARMEN DE LA FRONTERA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUANCABAMBA",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
@@ -10177,71 +11160,6 @@ const datos = [
         ]
       },
       {
-        "name": "AYABACA",
-        "districts": [
-          {
-            "name": "AYABACA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "JILILI",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "LAGUNAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "MONTERO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "PACAIPAMPA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "SICCHEZ",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "FRIAS",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "PAIMAS",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "SAPILLICA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "CUATRO DISTRITOS"
-          },
-          {
-            "name": "SUYO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "CUATRO DISTRITOS"
-          }
-        ]
-      },
-      {
         "name": "MORROPON",
         "districts": [
           {
@@ -10252,30 +11170,6 @@ const datos = [
           },
           {
             "name": "CHALACO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "SALITRAL",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "SAN JUAN DE BIGOTE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "SANTA CATALINA DE MOSSA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "SEIS DISTRITOS"
-          },
-          {
-            "name": "YAMANGO",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "SEIS DISTRITOS"
@@ -10299,28 +11193,87 @@ const datos = [
             "ambito": "CUATRO DISTRITOS"
           },
           {
+            "name": "SALITRAL",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "SAN JUAN DE BIGOTE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
+            "name": "SANTA CATALINA DE MOSSA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          },
+          {
             "name": "SANTO DOMINGO",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "CUATRO DISTRITOS"
+          },
+          {
+            "name": "YAMANGO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "SEIS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "PAITA",
+        "districts": [
+          {
+            "name": "AMOTAPE",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ARENAL",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "COLAN",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LA HUACA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PAITA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TAMARINDO",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "VICHAYAL",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
           }
         ]
       },
       {
         "name": "PIURA",
         "districts": [
-          {
-            "name": "PIURA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "VEINTISEIS DE OCTUBRE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "CASTILLA",
             "zone": "4",
@@ -10364,54 +11317,19 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "PIURA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "TAMBO GRANDE",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "PAITA",
-        "districts": [
-          {
-            "name": "PAITA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "AMOTAPE",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "ARENAL",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "COLAN",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "LA HUACA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "TAMARINDO",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "VICHAYAL",
+            "name": "VEINTISEIS DE OCTUBRE",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
@@ -10421,12 +11339,6 @@ const datos = [
       {
         "name": "SECHURA",
         "districts": [
-          {
-            "name": "SECHURA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "BELLAVISTA DE LA UNION",
             "zone": "4",
@@ -10446,13 +11358,19 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "VICE",
+            "name": "RINCONADA LLICUAR",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "RINCONADA LLICUAR",
+            "name": "SECHURA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "VICE",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
@@ -10462,12 +11380,6 @@ const datos = [
       {
         "name": "SULLANA",
         "districts": [
-          {
-            "name": "SULLANA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "BELLAVISTA",
             "zone": "4",
@@ -10509,18 +11421,18 @@ const datos = [
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SULLANA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
           }
         ]
       },
       {
         "name": "TALARA",
         "districts": [
-          {
-            "name": "PARIÑAS",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "EL ALTO",
             "zone": "4",
@@ -10550,6 +11462,18 @@ const datos = [
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PARINAS",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PARIÑAS",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
           }
         ]
       }
@@ -10559,356 +11483,8 @@ const datos = [
     "name": "PUNO",
     "provinces": [
       {
-        "name": "SANDIA",
-        "districts": [
-          {
-            "name": "ALTO INAMBARI",
-            "zone": "1",
-            "zFactor": "0.10",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "SAN JUAN DEL ORO",
-            "zone": "1",
-            "zFactor": "0.10",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "YANAHUAYA",
-            "zone": "1",
-            "zFactor": "0.10",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "CUYOCUYO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "LIMBANI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "PATAMBUCO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "PHARA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "QUIACA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "SAN PEDRO DE PUTINA PUNCO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "SIETE DISTRITOS"
-          },
-          {
-            "name": "SANDIA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "SIETE DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "SAN ANTONIO DE PUTINA",
-        "districts": [
-          {
-            "name": "ANANEA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "QUILCAPUNCU",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SINA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PEDRO VILCA APAZA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PUTINA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "CARABAYA",
-        "districts": [
-          {
-            "name": "AYAPATA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "COASA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CRUCERO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "ITUATA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAN GABAN",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "USICAYOS",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "AJOYANI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CORANI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MACUSANI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "OLLACHEA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "HUANCANE",
-        "districts": [
-          {
-            "name": "COJATA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUANCANE",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HUATASANI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "INCHUPALLA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PUSI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "ROSASPATA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "TARACO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "VILQUE CHICO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "MOHO",
-        "districts": [
-          {
-            "name": "HUAYRAPATA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "MOHO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CONIMA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "TILALI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "PUNO",
-        "districts": [
-          {
-            "name": "COATA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "CAPACHICA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "AMANTANI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TRES DISTRITOS"
-          },
-          {
-            "name": "ACORA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "ATUNCOLLA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "CHUCUITO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "HUATA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "MAÑAZO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "PAUCARCOLLA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "PICHACANI",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "PLATERIA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "PUNO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "SAN ANTONIO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "TIQUILLACA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          },
-          {
-            "name": "VILQUE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "DOCE DISTRITOS"
-          }
-        ]
-      },
-      {
         "name": "AZANGARO",
         "districts": [
-          {
-            "name": "AZANGARO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "ACHAYA",
             "zone": "2",
@@ -10928,6 +11504,12 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "AZANGARO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "CAMINACA",
             "zone": "2",
             "zFactor": "0.25",
@@ -10941,6 +11523,12 @@ const datos = [
           },
           {
             "name": "JOSE DOMINGO CHOQUEHUANCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MUNANI",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
@@ -10989,6 +11577,71 @@ const datos = [
           },
           {
             "name": "TIRAPATA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "CARABAYA",
+        "districts": [
+          {
+            "name": "AJOYANI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "AYAPATA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "COASA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CORANI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CRUCERO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ITUATA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MACUSANI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "OLLACHEA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN GABAN",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "USICAYOS",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
@@ -11078,26 +11731,61 @@ const datos = [
         ]
       },
       {
-        "name": "LAMPA",
+        "name": "HUANCANE",
         "districts": [
           {
-            "name": "CALAPUJA",
+            "name": "COJATA",
             "zone": "2",
             "zFactor": "0.25",
-            "ambito": "TRES DISTRITOS"
+            "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "NICASIO",
+            "name": "HUANCANE",
             "zone": "2",
             "zFactor": "0.25",
-            "ambito": "TRES DISTRITOS"
+            "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "PUCARA",
+            "name": "HUATASANI",
             "zone": "2",
             "zFactor": "0.25",
-            "ambito": "TRES DISTRITOS"
+            "ambito": "TODOS LOS DISTRITOS"
           },
+          {
+            "name": "INCHUPALLA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PUSI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ROSASPATA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TARACO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "VILQUE CHICO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "LAMPA",
+        "districts": [
           {
             "name": "CABANILLA",
             "zone": "3",
@@ -11105,10 +11793,22 @@ const datos = [
             "ambito": "SIETE DISTRITOS"
           },
           {
+            "name": "CALAPUJA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
             "name": "LAMPA",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "NICASIO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRES DISTRITOS"
           },
           {
             "name": "OCUVIRI",
@@ -11127,6 +11827,12 @@ const datos = [
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "PUCARA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRES DISTRITOS"
           },
           {
             "name": "SANTA LUCIA",
@@ -11176,6 +11882,12 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "NUNOA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "NUÑOA",
             "zone": "2",
             "zFactor": "0.25",
@@ -11202,14 +11914,173 @@ const datos = [
         ]
       },
       {
-        "name": "SAN ROMAN",
+        "name": "MOHO",
         "districts": [
           {
-            "name": "JULIACA",
-            "zone": "3",
-            "zFactor": "0.35",
+            "name": "CONIMA",
+            "zone": "2",
+            "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
           },
+          {
+            "name": "HUAYRAPATA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MOHO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TILALI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "PUNO",
+        "districts": [
+          {
+            "name": "ACORA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "AMANTANI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "ATUNCOLLA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "CAPACHICA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "CHUCUITO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "COATA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "HUATA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "MANAZO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "MAÑAZO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "PAUCARCOLLA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "PICHACANI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "PLATERIA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "PUNO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "SAN ANTONIO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "TIQUILLACA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          },
+          {
+            "name": "VILQUE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "DOCE DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "SAN ANTONIO DE PUTINA",
+        "districts": [
+          {
+            "name": "ANANEA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PEDRO VILCA APAZA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PUTINA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "QUILCAPUNCU",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SINA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "SAN ROMAN",
+        "districts": [
           {
             "name": "CABANA",
             "zone": "3",
@@ -11227,18 +12098,89 @@ const datos = [
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "JULIACA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN MIGUEL",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "SANDIA",
+        "districts": [
+          {
+            "name": "ALTO INAMBARI",
+            "zone": "1",
+            "zFactor": "0.10",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "CUYOCUYO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "LIMBANI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "PATAMBUCO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "PHARA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "QUIACA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "SAN JUAN DEL ORO",
+            "zone": "1",
+            "zFactor": "0.10",
+            "ambito": "TRES DISTRITOS"
+          },
+          {
+            "name": "SAN PEDRO DE PUTINA PUNCO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "SANDIA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "SIETE DISTRITOS"
+          },
+          {
+            "name": "YANAHUAYA",
+            "zone": "1",
+            "zFactor": "0.10",
+            "ambito": "TRES DISTRITOS"
           }
         ]
       },
       {
         "name": "YUNGUYO",
         "districts": [
-          {
-            "name": "YUNGUYO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "ANAPIA",
             "zone": "3",
@@ -11274,6 +12216,12 @@ const datos = [
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "YUNGUYO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
           }
         ]
       }
@@ -11286,12 +12234,6 @@ const datos = [
         "name": "BELLAVISTA",
         "districts": [
           {
-            "name": "BELLAVISTA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
             "name": "ALTO BIAVO",
             "zone": "2",
             "zFactor": "0.25",
@@ -11299,6 +12241,12 @@ const datos = [
           },
           {
             "name": "BAJO BIAVO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "BELLAVISTA",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
@@ -11324,14 +12272,43 @@ const datos = [
         ]
       },
       {
-        "name": "HUALLAGA",
+        "name": "EL DORADO",
         "districts": [
           {
-            "name": "SAPOSOA",
-            "zone": "2",
-            "zFactor": "0.25",
+            "name": "AGUA BLANCA",
+            "zone": "3",
+            "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           },
+          {
+            "name": "SAN JOSE DE SISA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SAN MARTIN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SANTA ROSA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SHATOJA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "HUALLAGA",
+        "districts": [
           {
             "name": "ALTO SAPOSOA",
             "zone": "2",
@@ -11357,6 +12334,12 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "SAPOSOA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "TINGO DE SAPOSOA",
             "zone": "2",
             "zFactor": "0.25",
@@ -11367,12 +12350,6 @@ const datos = [
       {
         "name": "LAMAS",
         "districts": [
-          {
-            "name": "LAMAS",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "ALONSO DE ALVARADO",
             "zone": "3",
@@ -11392,7 +12369,19 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "CUNUMBUQUI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "CUÑUMBUQUI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LAMAS",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
@@ -11439,12 +12428,6 @@ const datos = [
         "name": "MARISCAL CACERES",
         "districts": [
           {
-            "name": "JUANJUI",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
             "name": "CAMPANILLA",
             "zone": "2",
             "zFactor": "0.25",
@@ -11452,6 +12435,12 @@ const datos = [
           },
           {
             "name": "HUICUNGO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "JUANJUI",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
@@ -11471,14 +12460,49 @@ const datos = [
         ]
       },
       {
-        "name": "PICOTA",
+        "name": "MOYOBAMBA",
         "districts": [
           {
-            "name": "PICOTA",
-            "zone": "2",
-            "zFactor": "0.25",
+            "name": "CALZADA",
+            "zone": "3",
+            "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
           },
+          {
+            "name": "HABANA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "JEPELACIO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "MOYOBAMBA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SORITOR",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "YANTALO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "PICOTA",
+        "districts": [
           {
             "name": "BUENOS AIRES",
             "zone": "2",
@@ -11487,6 +12511,12 @@ const datos = [
           },
           {
             "name": "CASPISAPA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PICOTA",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
@@ -11536,55 +12566,8 @@ const datos = [
         ]
       },
       {
-        "name": "MOYOBAMBA",
-        "districts": [
-          {
-            "name": "MOYOBAMBA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "CALZADA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HABANA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "JEPELACIO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SORITOR",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "YANTALO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
         "name": "RIOJA",
         "districts": [
-          {
-            "name": "RIOJA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "AWAJUN",
             "zone": "3",
@@ -11616,6 +12599,12 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "RIOJA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "SAN FERNANDO",
             "zone": "3",
             "zFactor": "0.35",
@@ -11638,12 +12627,6 @@ const datos = [
       {
         "name": "SAN MARTIN",
         "districts": [
-          {
-            "name": "TARAPOTO",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "CUATRO DISTRITOS"
-          },
           {
             "name": "ALBERTO LEVEAU",
             "zone": "2",
@@ -11721,18 +12704,18 @@ const datos = [
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "DIEZ DISTRITOS"
+          },
+          {
+            "name": "TARAPOTO",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "CUATRO DISTRITOS"
           }
         ]
       },
       {
         "name": "TOCACHE",
         "districts": [
-          {
-            "name": "TOCACHE",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "NUEVO PROGRESO",
             "zone": "2",
@@ -11746,7 +12729,19 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
+            "name": "SANTA LUCIA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
             "name": "SHUNTE",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TOCACHE",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
@@ -11758,41 +12753,6 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           }
         ]
-      },
-      {
-        "name": "EL DORADO",
-        "districts": [
-          {
-            "name": "SAN JOSE DE SISA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "AGUA BLANCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SAN MARTIN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SANTA ROSA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SHATOJA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
       }
     ]
   },
@@ -11800,67 +12760,8 @@ const datos = [
     "name": "TACNA",
     "provinces": [
       {
-        "name": "TARATA",
-        "districts": [
-          {
-            "name": "TARATA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "HEROES ALBARRACIN",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "ESTIQUE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "ESTIQUE PAMPA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SITAJARA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "SUSAPAYA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "TARUCACHI",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "TICACO",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
         "name": "CANDARAVE",
         "districts": [
-          {
-            "name": "CANDARAVE",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "CAIRANI",
             "zone": "3",
@@ -11869,6 +12770,12 @@ const datos = [
           },
           {
             "name": "CAMILACA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CANDARAVE",
             "zone": "3",
             "zFactor": "0.35",
             "ambito": "TODOS LOS DISTRITOS"
@@ -11897,12 +12804,6 @@ const datos = [
         "name": "JORGE BASADRE",
         "districts": [
           {
-            "name": "LOCUMBA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
             "name": "ILABAYA",
             "zone": "4",
             "zFactor": "0.45",
@@ -11913,24 +12814,18 @@ const datos = [
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "LOCUMBA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
           }
         ]
       },
       {
         "name": "TACNA",
         "districts": [
-          {
-            "name": "PALCA",
-            "zone": "3",
-            "zFactor": "0.35",
-            "ambito": "UN DISTRITO"
-          },
-          {
-            "name": "TACNA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "NUEVE DISTRITOS"
-          },
           {
             "name": "ALTO DE LA ALIANZA",
             "zone": "4",
@@ -11950,16 +12845,34 @@ const datos = [
             "ambito": "NUEVE DISTRITOS"
           },
           {
+            "name": "CORONEL GREGORIO ALBARRACIN LANCHIPA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "NUEVE DISTRITOS"
+          },
+          {
             "name": "INCLAN",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "NUEVE DISTRITOS"
           },
           {
+            "name": "LA YARADA LOS PALOS",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "UN DISTRITO"
+          },
+          {
             "name": "PACHIA",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "NUEVE DISTRITOS"
+          },
+          {
+            "name": "PALCA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "UN DISTRITO"
           },
           {
             "name": "POCOLLAY",
@@ -11974,10 +12887,69 @@ const datos = [
             "ambito": "NUEVE DISTRITOS"
           },
           {
-            "name": "CORONEL GREGORIO ALBARRACIN LANCHIPA",
+            "name": "TACNA",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "NUEVE DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "TARATA",
+        "districts": [
+          {
+            "name": "ESTIQUE",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ESTIQUE PAMPA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ESTIQUE-PAMPA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HEROES ALBARRACIN",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SITAJARA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "SUSAPAYA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TARATA",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TARUCACHI",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TICACO",
+            "zone": "3",
+            "zFactor": "0.35",
+            "ambito": "TODOS LOS DISTRITOS"
           }
         ]
       }
@@ -11990,7 +12962,7 @@ const datos = [
         "name": "CONTRALMIRANTE VILLAR",
         "districts": [
           {
-            "name": "ZORRITOS",
+            "name": "CANOAS DE PUNTA SAL",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
@@ -12002,7 +12974,7 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           },
           {
-            "name": "CANOAS DE PUNTA SAL",
+            "name": "ZORRITOS",
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
@@ -12012,12 +12984,6 @@ const datos = [
       {
         "name": "TUMBES",
         "districts": [
-          {
-            "name": "TUMBES",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "CORRALES",
             "zone": "4",
@@ -12047,18 +13013,18 @@ const datos = [
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "TUMBES",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
           }
         ]
       },
       {
         "name": "ZARUMILLA",
         "districts": [
-          {
-            "name": "ZARUMILLA",
-            "zone": "4",
-            "zFactor": "0.45",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
           {
             "name": "AGUAS VERDES",
             "zone": "4",
@@ -12076,6 +13042,12 @@ const datos = [
             "zone": "4",
             "zFactor": "0.45",
             "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "ZARUMILLA",
+            "zone": "4",
+            "zFactor": "0.45",
+            "ambito": "TODOS LOS DISTRITOS"
           }
         ]
       }
@@ -12085,21 +13057,16 @@ const datos = [
     "name": "UCAYALI",
     "provinces": [
       {
-        "name": "PURUS",
-        "districts": [
-          {
-            "name": "PURUS",
-            "zone": "1",
-            "zFactor": "0.10",
-            "ambito": "UNICO DISTRITO"
-          }
-        ]
-      },
-      {
         "name": "ATALAYA",
         "districts": [
           {
             "name": "RAIMONDI",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "RAYMONDI",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
@@ -12118,29 +13085,6 @@ const datos = [
           },
           {
             "name": "YURUA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          }
-        ]
-      },
-      {
-        "name": "PADRE ABAD",
-        "districts": [
-          {
-            "name": "CURIMANA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "IRAZOLA",
-            "zone": "2",
-            "zFactor": "0.25",
-            "ambito": "TODOS LOS DISTRITOS"
-          },
-          {
-            "name": "PADRE ABAD",
             "zone": "2",
             "zFactor": "0.25",
             "ambito": "TODOS LOS DISTRITOS"
@@ -12193,9 +13137,67 @@ const datos = [
             "ambito": "TODOS LOS DISTRITOS"
           }
         ]
+      },
+      {
+        "name": "PADRE ABAD",
+        "districts": [
+          {
+            "name": "ALEXANDER VON HUMBOLDT",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "BOQUERON",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "CURIMANA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "HUIPOCA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "IRAZOLA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "NESHUYA",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          },
+          {
+            "name": "PADRE ABAD",
+            "zone": "2",
+            "zFactor": "0.25",
+            "ambito": "TODOS LOS DISTRITOS"
+          }
+        ]
+      },
+      {
+        "name": "PURUS",
+        "districts": [
+          {
+            "name": "PURUS",
+            "zone": "1",
+            "zFactor": "0.10",
+            "ambito": "UNICO DISTRITO"
+          }
+        ]
       }
     ]
   }
-]
+];
 
 export default datos;
