@@ -69,13 +69,14 @@ header span {
 
 /* ─── LAYOUT ─── */
 .container {
-  max-width: auto;
+  max-width: 100%;
   margin: 0 auto;
   padding: 2rem;
   display: grid;
   grid-template-columns: 400px 1fr;
   gap: 1.5rem;
   align-items: start;
+  overflow-x: auto;
 }
 
 /* ─── VERSION SELECTOR ─── */
@@ -397,6 +398,7 @@ input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; }
   padding: 1.5rem;
   position: relative;
   clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+  min-width: 0;
 }
 .chart-panel::before {
   content: '';
@@ -422,8 +424,8 @@ input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; }
   color: var(--muted);
 }
 .legend-dot::before { content: ''; width: 20px; height: 2px; background: var(--accent2); display: block; }
-canvas { display: block; }
-.chart-wrapper { position: relative; height: 420px; }
+canvas { display: block; width: 100% !important; height: 100% !important; max-width: 100%; }
+.chart-wrapper { position: relative; height: 420px; overflow: hidden; }
 
 /* ─── TABLA ─── */
 .table-panel {
