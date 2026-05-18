@@ -1,7 +1,7 @@
 import UBIGEO_DATA from "./ubigeo.js";
 
-// ════════════════════════════════════════════════════════
-//  DATOS POR VERSIÓN DE NORMA
+// ══════════════════════════════════════════════════
+//  PARAMETROS POR VERSIÓN DE NORMA
 // ══════════════════════════════════════════════════
 
 let normaVersion = '2018';
@@ -64,33 +64,7 @@ const SUELO_PARAMS_2026 = {
   S5: { Tp: 1.0, Tl: 1.6 },
 };
 
-// ════════════════════════════════════════════════════════
-//  NOTAS POR VERSIÓN
-// ════════════════════════════════════════════════════════
 
-const VERSION_NOTES = {
-  '1977': `<strong style="color:var(--accent6)">RNC — 1977:</strong> Primera norma sísmica nacional.<br>
-    3 zonas (Z=0.40/0.70/1.00), suelos S1–S3.<br>
-    Espectro: C=(Tp/T)<sup>2/3</sup> ≤ 2.5 (2 tramos). Sin R explícito.`,
-  '1997': `<strong style="color:var(--accent5)">E.030 — 1997:</strong> Segunda norma sismorresistente NTE.<br>
-    3 zonas (Z=0.15/0.30/0.40), suelos S1–S4.<br>
-    Espectro: 2 tramos sin TL. R elevados (÷1.25 en 2003).`,
-  '2003': `<strong style="color:var(--accent3)">E.030 — 2003:</strong> Revisión post-sismo Atico 2001.<br>
-    3 zonas (Z=0.15/0.30/0.40), suelos S1–S4.<br>
-    Espectro: 2 tramos sin TL. R reducidos respecto a 1997.`,
-  '2016': `<strong style="color:var(--accent4)">E.030 — 2016:</strong> Gran actualización post-sismo Pisco 2007.<br>
-    4 zonas (Z=0.10/0.25/0.35/0.45), suelos S0–S3.<br>
-    Factor S depende de zona×suelo. Espectro: 3 tramos con TL.`,
-  '2018': `<strong style="color:var(--accent)">E.030 — 2018:</strong> Actualización vigente (hasta 2026).<br>
-    Mismos parámetros espectrales que 2016. Mejoras en irregularidades.<br>
-    4 zonas (Z=0.10/0.25/0.35/0.45), suelos S0–S3.`,
-  '2026': `<strong style="color:var(--accent2)">E.030 — 2026 ★ VIGENTE (RM 183-2026 — 28 abr 2026):</strong><br>
-    • Clasificación de suelos: Vs30, N60, Su con nuevos umbrales (S0-S5)<br>
-    • Período Ts: obligatorio para Cat. A/B en Z4<br>
-    • Acción sísmica: 100% en 2 direcciones (Cat. A1/A2)<br>
-    • Muros limitada: R = 3.5 (máx 5 pisos, Tabla Nº 10)<br>
-    • Parámetros Z/S/Tp/TL: idénticos a 2018`,
-};
 
 const VER_COLOR = {
   '1977': '#f72585',
@@ -247,69 +221,6 @@ function clearUbigeo() {
 }
 
 // Inicializar eventos del buscador al cargar el DOM
-function initUbigeo() {
-  const input   = document.getElementById('ubigeo-input');
-  const dd      = document.getElementById('ubigeo-dropdown');
-  const clearBtn = document.getElementById('ubigeo-clear');
-
-  // Posicionar dropdown como position:absolute en body
-  dd.style.position = 'absolute';
-
-  input.addEventListener('input', function () {
-    const q = this.value.trim();
-    clearBtn.style.display = q.length > 0 ? 'flex' : 'none';
-    if (q.length < 2) { dd.style.display = 'none'; ubigeoResultados = []; return; }
-    ubigeoResultados = buscarUbigeo(q);
-    ubigeoHighlight  = -1;
-    posicionarDropdown();
-    renderDropdown();
-  });
-
-  input.addEventListener('keydown', function (e) {
-    if (dd.style.display === 'none') return;
-    if (e.key === 'ArrowDown') {
-      e.preventDefault();
-      ubigeoHighlight = Math.min(ubigeoHighlight + 1, ubigeoResultados.length - 1);
-      renderDropdown();
-    } else if (e.key === 'ArrowUp') {
-      e.preventDefault();
-      ubigeoHighlight = Math.max(ubigeoHighlight - 1, 0);
-      renderDropdown();
-    } else if (e.key === 'Enter') {
-      e.preventDefault();
-      if (ubigeoHighlight >= 0) seleccionarUbigeo(ubigeoHighlight);
-      else if (ubigeoResultados.length === 1) seleccionarUbigeo(0);
-    } else if (e.key === 'Escape') {
-      dd.style.display = 'none';
-    }
-  });
-
-  // Clic en items del dropdown (delegación de eventos)
-  dd.addEventListener('mousedown', function (e) {
-    const item = e.target.closest('.ubigeo-item');
-    if (item) {
-      e.preventDefault(); // evita que el blur cierre antes
-      seleccionarUbigeo(parseInt(item.dataset.idx));
-    }
-  });
-
-  dd.addEventListener('mouseover', function (e) {
-    const item = e.target.closest('.ubigeo-item');
-    if (item) {
-      ubigeoHighlight = parseInt(item.dataset.idx);
-      renderDropdown();
-    }
-  });
-
-  // Cerrar al hacer clic fuera
-  document.addEventListener('click', function (e) {
-    if (!input.contains(e.target) && !dd.contains(e.target)) {
-      dd.style.display = 'none';
-    }
-  });
-
-  clearBtn.addEventListener('click', clearUbigeo);
-}
 
 
 function initSelects() {
@@ -383,17 +294,10 @@ function setVersion(v) {
   document.querySelectorAll('.ver-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('btn' + v).classList.add('active');
 
-  const noteEl = document.getElementById('version-note');
-  noteEl.className = 'version-note v' + v;
-  noteEl.innerHTML = VERSION_NOTES[v];
-
   const tsGroup       = document.getElementById('ts-group');
-  const criteriaGroup = document.getElementById('criteria-group');
   const recomend      = document.getElementById('recomendaciones-2026');
   const is2026        = v === '2026';
   tsGroup.style.display       = is2026 ? 'block' : 'none';
-  criteriaGroup.style.display = is2026 ? 'block' : 'none';
-  recomend.style.display      = is2026 ? 'block' : 'none';
 
   
   const distSelect = document.getElementById('zonaDistrito');
@@ -438,7 +342,6 @@ function setVersion(v) {
     }
 
   // Re-aplicar zona del ubigeo si hay uno seleccionado
-  if (ubigeoSeleccionado) applyZonaFromUbigeo(ubigeoSeleccionado.zone);
 }
 
 function makeOpt(val, text, selected) {
@@ -535,6 +438,7 @@ function calcular() {
     sueloS5Advertencia = true;
     errEl.innerHTML = '⚠ S5 (Excepcional): Requiere estudio geotécnico. Continuar solo con fines informativos.';
     errEl.style.display = 'block';
+    alert(errEl.innerHTML);
   }
 
   let p = resolveParams(normaVersion, zonaVal, sueloVal);
@@ -810,8 +714,7 @@ function exportTXT() {
 }
 
 // ── INICIALIZAR ──
-initUbigeo();
-initSelects();   // <-- agregar esta línea
+initSelects();
 setVersion('2026');
 
 // Exponer globales (necesario por type="module")

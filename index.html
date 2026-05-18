@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Espectro Sísmico — Norma E.030</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -30,26 +29,10 @@
       <button class="ver-btn" data-v="2018" id="btn2018" onclick="setVersion('2018')">E.030<br>2018</button>
       <button class="ver-btn" data-v="2026" id="btn2026" onclick="setVersion('2026')">E.030<br>2026★</button>
     </div>
-    <div class="version-note v2018" id="version-note"></div>
 
     <div class="section-title">Ubicación y Zona Sísmica</div>
 
-    <!-- ── BUSCADOR DE UBIGEO ── -->
-    <div class="field-group">
-      <label>Buscar Distrito <span class="badge">UBIGEO</span></label>
-      <div class="ubigeo-wrap">
-        <div class="ubigeo-input-row">
-          <input
-            type="text"
-            id="ubigeo-input"
-            placeholder="Escribe un distrito"
-            autocomplete="off"
-            spellcheck="false"
-            >
-          <button class="ubigeo-clear-btn" id="ubigeo-clear" title="Limpiar búsqueda" style="display:none">✕</button>
-        </div>
-      </div>
-    </div>
+
 
     <div class="field-group">
       <label> <span class="badge">Departamento</span></label>
@@ -72,19 +55,6 @@
       <select id="suelo"></select>
     </div>
 
-    <!-- CRITERIOS E.030-2026 (Tabla N°2) -->
-    <div class="field-group" id="criteria-group" style="display:none;background:rgba(0,255,136,0.08);padding:0.7rem;border-left:2px solid var(--accent2);margin-bottom:1.2rem;">
-      <div style="font-size:0.7rem;color:var(--accent2);margin-bottom:0.5rem;letter-spacing:1px;text-transform:uppercase;font-weight:600;">📋 Tabla Nº 2 — Clasificación de Suelos (E.030-2026)</div>
-      <div style="font-size:0.72rem;color:var(--muted);line-height:1.65;font-family:'Share Tech Mono',monospace;">
-        <strong>S0 — Roca dura:</strong> Vs30 ≥ 800 m/s<br>
-        <strong>S1 — Suelo muy rígido:</strong> Vs30 550–800 m/s  o  N60 > 50  o  Su > 100 kPa<br>
-        <strong>S2 — Suelo rígido:</strong> Vs30 350–550 m/s  o  N60 30–50  o  Su 80–100 kPa<br>
-        <strong>S3 — Suelo intermedio:</strong> Vs30 200–350 m/s  o  N60 15–30  o  Su 50–80 kPa<br>
-        <strong>S4 — Suelo blando:</strong> Vs30 &lt; 200 m/s  o  N60 &lt; 15  o  Su &lt; 50 kPa<br>
-        <strong>S5 — Excepcional:</strong> Requiere estudio geotécnico especializado.<br>
-        <span style="color:var(--accent3);font-weight:600;margin-top:0.3rem;display:block;">⚠ NOTA: Usar el suelo más desfavorable según cualquiera de los criterios.</span>
-      </div>
-    </div>
 
     <div class="field-group">
       <label>Categoría de la Edificación <span class="badge">U</span></label>
@@ -173,16 +143,7 @@
 
     <div id="error-msg" class="error-msg">⚠ Verifique los parámetros ingresados</div>
 
-    <!-- CHECKLIST E.030-2026 -->
-    <div id="recomendaciones-2026" style="display:none;background:rgba(0,255,136,0.06);border-left:3px solid var(--accent2);padding:0.8rem;margin:1rem 0;font-size:0.75rem;color:var(--muted);line-height:1.7;font-family:'Share Tech Mono',monospace;">
-      <div style="color:var(--accent2);font-weight:600;margin-bottom:0.5rem;">📋 CHECKLIST E.030-2026:</div>
-      <input type="checkbox" id="check_suelo"> <strong>Tabla Nº 2:</strong> Suelo clasificado por Vs30, N60, Su<br>
-      <input type="checkbox" id="check_ts"> <strong>Art. 15:</strong> Si Cat. A/B en Z4, Ts determinado<br>
-      <input type="checkbox" id="check_ts_condicion"> <strong>Condición Ts:</strong> Si Ts > 0.65×Tp, perfil degradado ✓<br>
-      <input type="checkbox" id="check_r"> <strong>Tabla Nº 10:</strong> Coeficientes R verificados<br>
-      <input type="checkbox" id="check_bidireccional"> <strong>Art. 28:</strong> 100% en 2 direcciones (Cat. A1/A2)<br>
-      <input type="checkbox" id="check_microzona"> <strong>Anexo III:</strong> Microzonificación para Z4 y suelos S3-S5<br>
-    </div>
+
 
     <br>
     <button class="btn-calc" onclick="calcular()">▶ GENERAR ESPECTRO</button>
