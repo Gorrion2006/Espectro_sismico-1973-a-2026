@@ -146,7 +146,7 @@
 
 
     <br>
-    <button class="btn-calc" onclick="calcular()">▶ GENERAR ESPECTRO</button>
+    <button id="bot_accion" class="btn-calc" onclick="calcular()">▶ GENERAR ESPECTRO</button>
 
     <div id="params-out" class="params-grid" style="display:none"></div>
   </div>
@@ -155,7 +155,7 @@
   <div class="chart-panel">
     <div class="chart-header">
       <div>
-        <div class="chart-title">Espectro de Pseudo-aceleraciones</div>
+        <div class="chart-title" id="tit_diagrama">Espectro de Pseudo-aceleraciones</div>
         <div class="chart-subtitle" id="formula-label">Sa = Z·U·C·S/R · g</div>
       </div>
       <div class="legend-dot">SISMO DE DISEÑO</div>
@@ -167,10 +167,9 @@
       </div>
       <canvas id="myChart" style="display:none"></canvas>
     </div>
-  </div>
-
-  <!-- ══════════════ TABLA ══════════════ -->
-  <div class="table-panel" id="tabla-panel" style="display:none">
+    
+    <!-- ══════════════ TABLA DE VALORES ══════════════ -->
+    <div class="table-panel" id="tabla-panel" style="display:none">
     <div class="chart-header">
       <div class="section-title" style="margin:0">Tabla de valores</div>
       <div style="display:flex;gap:0.5rem;">
@@ -191,7 +190,10 @@
         <tbody id="tabla-body"></tbody>
       </table>
     </div>
+  </div>  
   </div>
+
+
 
 </div>
 

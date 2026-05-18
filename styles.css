@@ -69,7 +69,7 @@ header span {
 
 /* ─── LAYOUT ─── */
 .container {
-  max-width: 1380px;
+  max-width: auto;
   margin: 0 auto;
   padding: 2rem;
   display: grid;

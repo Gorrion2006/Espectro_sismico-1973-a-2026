@@ -487,6 +487,13 @@ function calcular() {
   renderParams(Z_eff, U, S_eff, R, R_base, IaEf, IpEf, Tp_eff, Tl_eff, zonaVal, sueloVal, Ts, sueloModificado, sueloOriginal, sueloEfectivo, sueloS5Advertencia);
 }
 
+
+const bot_accion = document.getElementById("bot_accion");
+const diagrama = document.getElementById("tit_diagrama");
+bot_accion.addEventListener("click", () => {
+  diagrama.scrollIntoView({behavior: 'smooth',block: 'start'});
+});
+
 // ════════════════════════════════════════════════════════
 //  RENDERIZADO
 // ════════════════════════════════════════════════════════
