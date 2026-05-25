@@ -5,9 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Espectro Sísmico — Norma E.030</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+
 
 <header>
   <div class="logo-box">E-030</div>
@@ -22,12 +27,12 @@
 
     <div class="section-title">Versión de la Norma</div>
     <div class="version-selector">
-      <button class="ver-btn" data-v="1977" id="btn1977" onclick="setVersion('1977')">RNC<br>1977</button>
-      <button class="ver-btn" data-v="1997" id="btn1997" onclick="setVersion('1997')">E.030<br>1997</button>
-      <button class="ver-btn" data-v="2003" id="btn2003" onclick="setVersion('2003')">E.030<br>2003</button>
-      <button class="ver-btn" data-v="2016" id="btn2016" onclick="setVersion('2016')">E.030<br>2016</button>
-      <button class="ver-btn" data-v="2018" id="btn2018" onclick="setVersion('2018')">E.030<br>2018</button>
-      <button class="ver-btn" data-v="2026" id="btn2026" onclick="setVersion('2026')">E.030<br>2026★</button>
+      <button class="ver-btn" data-v="1977" id="btn1977">RNC<br>1977</button>
+      <button class="ver-btn" data-v="1997" id="btn1997">E.030<br>1997</button>
+      <button class="ver-btn" data-v="2003" id="btn2003">E.030<br>2003</button>
+      <button class="ver-btn" data-v="2016" id="btn2016">E.030<br>2016</button>
+      <button class="ver-btn" data-v="2018" id="btn2018">E.030<br>2018</button>
+      <button class="ver-btn" data-v="2026" id="btn2026">E.030<br>2026★</button>
     </div>
 
     <div class="section-title">Ubicación y Zona Sísmica</div>
@@ -146,7 +151,7 @@
 
 
     <br>
-    <button id="bot_accion" class="btn-calc" onclick="calcular()">▶ GENERAR ESPECTRO</button>
+        <button id="bot_accion" class="btn-calc">▶ GENERAR ESPECTRO</button>
 
     <div id="params-out" class="params-grid" style="display:none"></div>
   </div>
@@ -173,7 +178,8 @@
     <div class="chart-header">
       <div class="section-title" style="margin:0">Tabla de valores</div>
       <div style="display:flex;gap:0.5rem;">
-        <button class="btn-export" onclick="exportTXT()">↓ EXPORTAR TXT</button>
+        <button id="btn-exportTXT"  class="btn-export">↓ EXPORTAR TXT</button>
+        <button id="btn-exportXLSX" class="btn-export">↓ EXPORTAR EXCEL</button>
       </div>
     </div>
     <br>

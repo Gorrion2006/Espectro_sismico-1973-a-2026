@@ -1,5 +1,6 @@
 import UBIGEO_DATA from "./ubigeo.js";
-
+import { exportTXT } from "./exportTXT.js";
+import { exportXLSX } from './exportXLSX.js';
 // ══════════════════════════════════════════════════
 //  PARAMETROS POR VERSIÓN DE NORMA
 // ══════════════════════════════════════════════════
@@ -488,11 +489,7 @@ function calcular() {
 }
 
 
-const bot_accion = document.getElementById("bot_accion");
-const diagrama = document.getElementById("tit_diagrama");
-bot_accion.addEventListener("click", () => {
-  diagrama.scrollIntoView({behavior: 'smooth',block: 'start'});
-});
+
 
 // ════════════════════════════════════════════════════════
 //  RENDERIZADO
@@ -692,39 +689,29 @@ function renderTable(datos) {
     </tr>`).join('');
 }
 
-// ════════════════════════════════════════════════════════
-//  EXPORTAR TXT
-// ════════════════════════════════════════════════════════
-
-function exportTXT() {
-  if (!datosEspectro.length) return;
-
-  const pasoVal = parseFloat(document.getElementById('paso').value);
-
-  const datosFiltrados = datosEspectro.filter(d => {
-    const multiple = Math.round(d.T / pasoVal);
-    return Math.abs(d.T - multiple * pasoVal) < 1e-9;
-  });
-
-  const tableRows = datosFiltrados.map(d => `${d.T.toFixed(3)} ${d.Sa.toFixed(4)}`);
-
-  // \r\n — saltos de línea Windows, compatible con NetCAD
-  const txt = tableRows.join('\r\n');
-
-  const encoder = new TextEncoder();
-  const utf8    = encoder.encode(txt);
-  const blob    = new Blob([utf8], { type: 'text/plain;charset=windows-1252' });
-  const a       = document.createElement('a');
-  a.href        = URL.createObjectURL(blob);
-  a.download    = 'Espectro 1.txt';
-  a.click();
-}
 
 // ── INICIALIZAR ──
 initSelects();
 setVersion('2026');
 
-// Exponer globales (necesario por type="module")
-window.setVersion = setVersion;
-window.calcular   = calcular;
-window.exportTXT  = exportTXT;
+// ── LISTENERS (sin onclick en HTML) ──────────────────
+['1977','1997','2003','2016','2018','2026'].forEach(v =>
+  document.getElementById('btn' + v)
+    .addEventListener('click', () => setVersion(v))
+);
+
+document.getElementById('bot_accion')
+  .addEventListener('click', () => {
+    calcular();
+    document.getElementById('tit_diagrama')
+      .scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+document.getElementById('btn-exportTXT')
+  .addEventListener('click', () => exportTXT());
+
+document.getElementById('btn-exportXLSX')
+  .addEventListener('click', () => exportXLSX());
+
+// ── EXPORTS (al final, después de todo) ──────────────
+export { datosEspectro, normaVersion, resolveParams };
