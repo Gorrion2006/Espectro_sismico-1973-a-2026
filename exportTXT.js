@@ -1,4 +1,4 @@
-import { datosEspectro } from './app.js';
+import { datosEspectro } from './index.js';
 
 // ════════════════════════════════════════════════════════
 //  EXPORTAR TXT

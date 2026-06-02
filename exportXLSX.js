@@ -1,6 +1,6 @@
-import { datosEspectro } from './app.js';
-import { normaVersion }  from './app.js';
-import { resolveParams }  from './app.js';
+import { datosEspectro } from './index.js';
+import { normaVersion }  from './index.js';
+import { resolveParams }  from './index.js';
 
 function usarNombreUso(U) {
   const map = { 1.0:'Común (C)', 1.3:'Importante (B)', 1.5:'Esencial (A2)', 1.8:'Imp. mayor (A1)' };

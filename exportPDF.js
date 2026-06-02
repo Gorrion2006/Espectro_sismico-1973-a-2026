@@ -17,9 +17,9 @@
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
-import { datosEspectro } from './app.js';
-import { normaVersion }  from './app.js';
-import { resolveParams } from './app.js';
+import { datosEspectro } from './index.js';
+import { normaVersion }  from './index.js';
+import { resolveParams } from './index.js';
 
 // ── Paleta de color por versión (igual que exportXLSX) ────────────────────────
 const VER_HEX = {
